@@ -1,0 +1,1109 @@
+demo server on http://127.0.0.1:8096/jellyfin
+GET /jellyfin/System/Info/Public
+GET /jellyfin/System/Info/Public
+GET /jellyfin/Users/Public
+GET /jellyfin/QuickConnect/Enabled
+GET /jellyfin/Users/userkids000000000000000000000000/Images/Primary?fillHeight=240&quality=90&tag=a1
+GET /jellyfin/Users/usersam0000000000000000000000000/Images/Primary?fillHeight=240&quality=90&tag=a1
+GET /jellyfin/Users/userjordan0000000000000000000000/Images/Primary?fillHeight=240&quality=90&tag=a1
+GET /jellyfin/Users/useralex000000000000000000000000/Images/Primary?fillHeight=240&quality=90&tag=a1
+GET /jellyfin/System/Info/Public
+POST /jellyfin/Users/AuthenticateByName
+GET /jellyfin/Users/Public
+GET /jellyfin/QuickConnect/Enabled
+GET /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+GET /jellyfin/UserItems/Resume?Limit=24&MediaTypes=Video&userId=useralex000000000000000000000000
+GET /jellyfin/UserViews?userId=useralex000000000000000000000000
+GET /jellyfin/Users/Me
+GET /jellyfin/Shows/NextUp?EnableResumable=false&Limit=24&userId=useralex000000000000000000000000
+GET /jellyfin/Users/useralex000000000000000000000000/Images/Primary?fillHeight=96&quality=90
+GET /jellyfin/Items?Fields=Overview,Genres&IncludeItemTypes=Series&Limit=24&ParentId=viewshows00000000000000000000000&Recursive=true&userId=useralex0000000000000000
+GET /jellyfin/Items?Fields=Overview,Genres&IncludeItemTypes=Movie&Limit=24&ParentId=viewmovies0000000000000000000000&Recursive=true&userId=useralex00000000000000000
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Logo?maxWidth=1152&quality=90&tag=l1
+GET /jellyfin/Items/showthequietyear0000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49432)
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 694, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 359, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 763, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 476, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 462, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/Users/runner/work/aiostreams-ios/aiostreams-ios/tools/demo-server/server.py", line 409, in do_GET
+    return self._send(200, body, "image/png" if kind == "logo" else "image/jpeg")
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/runner/work/aiostreams-ios/aiostreams-ios/tools/demo-server/server.py", line 323, in _send
+    self.wfile.write(body)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 842, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+GET /jellyfin/Items/epsignalnoise1300000000000000000/Images/Primary?fillHeight=513&quality=90&tag=p1
+GET /jellyfin/Items/showorbit00000000000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49438)
+GET /jellyfin/Items/epsignalnoise1400000000000000000/Images/Primary?fillHeight=513&quality=90&tag=p1
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49436)
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 694, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 359, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 763, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 476, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 442, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socket.py", line 738, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 54] Connection reset by peer
+----------------------------------------
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 694, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 359, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 763, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 476, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 442, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socket.py", line 738, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 54] Connection reset by peer
+----------------------------------------
+GET /jellyfin/Items/moviepapermoons00000000000000000/Images/Thumb?fillHeight=513&quality=90&tag=t1
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Thumb?fillHeight=513&quality=90&tag=t1
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Backdrop/0?fillHeight=1080&quality=90&tag=b1
+GET /jellyfin/Items/showsignalnoise00000000000000000/Images/Logo?maxWidth=1152&quality=90&tag=l1
+GET /jellyfin/Items/showsignalnoise00000000000000000/Images/Backdrop/0?fillHeight=1080&quality=90&tag=b1
+GET /jellyfin/System/Info/Public
+POST /jellyfin/Users/AuthenticateByName
+GET /jellyfin/Users/Public
+GET /jellyfin/QuickConnect/Enabled
+GET /jellyfin/UserItems/Resume?Limit=24&MediaTypes=Video&userId=useralex000000000000000000000000
+GET /jellyfin/Users/useralex000000000000000000000000/Images/Primary?fillHeight=96&quality=90
+GET /jellyfin/Shows/NextUp?EnableResumable=false&Limit=24&userId=useralex000000000000000000000000
+GET /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+GET /jellyfin/UserViews?userId=useralex000000000000000000000000
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Thumb?fillHeight=513&quality=90&tag=t1
+GET /jellyfin/Items?Fields=Overview,Genres&IncludeItemTypes=Movie&Limit=24&ParentId=viewmovies0000000000000000000000&Recursive=true&userId=useralex00000000000000000
+GET /jellyfin/Items/epsignalnoise1400000000000000000/Images/Primary?fillHeight=513&quality=90&tag=p1
+GET /jellyfin/Items?Fields=Overview,Genres&IncludeItemTypes=Series&Limit=24&ParentId=viewshows00000000000000000000000&Recursive=true&userId=useralex0000000000000000
+GET /jellyfin/Users/Me
+GET /jellyfin/Items/moviepapermoons00000000000000000/Images/Thumb?fillHeight=513&quality=90&tag=t1
+GET /jellyfin/Items/epsignalnoise1300000000000000000/Images/Primary?fillHeight=513&quality=90&tag=p1
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Backdrop/0?fillHeight=1080&quality=90&tag=b1
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Logo?maxWidth=1152&quality=90&tag=l1
+GET /jellyfin/Items/movietidewater000000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/moviedesertbloom0000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49562)
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 694, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 359, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 763, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 474, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 462, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/Users/runner/work/aiostreams-ios/aiostreams-ios/tools/demo-server/server.py", line 409, in do_GET
+    return self._send(200, body, "image/png" if kind == "logo" else "image/jpeg")
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/runner/work/aiostreams-ios/aiostreams-ios/tools/demo-server/server.py", line 323, in _send
+    self.wfile.write(body)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 842, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/moviethelastlighthouse0000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49554)
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 694, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 359, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 763, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 476, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 462, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/Users/runner/work/aiostreams-ios/aiostreams-ios/tools/demo-server/server.py", line 409, in do_GET
+    return self._send(200, body, "image/png" if kind == "logo" else "image/jpeg")
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/runner/work/aiostreams-ios/aiostreams-ios/tools/demo-server/server.py", line 323, in _send
+    self.wfile.write(body)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 842, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+GET /jellyfin/Items/moviepapermoons00000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/movieembervalley0000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49563)
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 694, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 359, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 763, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 474, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 462, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/Users/runner/work/aiostreams-ios/aiostreams-ios/tools/demo-server/server.py", line 409, in do_GET
+    return self._send(200, body, "image/png" if kind == "logo" else "image/jpeg")
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/runner/work/aiostreams-ios/aiostreams-ios/tools/demo-server/server.py", line 323, in _send
+    self.wfile.write(body)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 842, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49558)
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 694, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 359, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 763, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 476, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 462, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/Users/runner/work/aiostreams-ios/aiostreams-ios/tools/demo-server/server.py", line 409, in do_GET
+    return self._send(200, body, "image/png" if kind == "logo" else "image/jpeg")
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/runner/work/aiostreams-ios/aiostreams-ios/tools/demo-server/server.py", line 323, in _send
+    self.wfile.write(body)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 842, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49559)
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 694, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 359, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 763, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 476, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 462, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/Users/runner/work/aiostreams-ios/aiostreams-ios/tools/demo-server/server.py", line 409, in do_GET
+    return self._send(200, body, "image/png" if kind == "logo" else "image/jpeg")
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/runner/work/aiostreams-ios/aiostreams-ios/tools/demo-server/server.py", line 323, in _send
+    self.wfile.write(body)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 842, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+GET /jellyfin/Items/showsignalnoise00000000000000000/Images/Backdrop/0?fillHeight=1080&quality=90&tag=b1
+GET /jellyfin/Items/showsignalnoise00000000000000000/Images/Logo?maxWidth=1152&quality=90&tag=l1
+GET /jellyfin/System/Info/Public
+POST /jellyfin/Users/AuthenticateByName
+GET /jellyfin/Users/Public
+GET /jellyfin/QuickConnect/Enabled
+GET /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+GET /jellyfin/UserItems/Resume?Limit=24&MediaTypes=Video&userId=useralex000000000000000000000000
+GET /jellyfin/Users/useralex000000000000000000000000/Images/Primary?fillHeight=96&quality=90
+GET /jellyfin/Shows/NextUp?EnableResumable=false&Limit=24&userId=useralex000000000000000000000000
+GET /jellyfin/UserViews?userId=useralex000000000000000000000000
+GET /jellyfin/Users/Me
+GET /jellyfin/Items?Fields=Overview,Genres&IncludeItemTypes=Movie&Limit=24&ParentId=viewmovies0000000000000000000000&Recursive=true&userId=useralex00000000000000000
+GET /jellyfin/Items?Fields=Overview,Genres&IncludeItemTypes=Series&Limit=24&ParentId=viewshows00000000000000000000000&Recursive=true&userId=useralex0000000000000000
+GET /jellyfin/Items/epsignalnoise1400000000000000000/Images/Primary?fillHeight=513&quality=90&tag=p1
+GET /jellyfin/Items?Ids=showsignalnoise00000000000000000&userId=useralex000000000000000000000000
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Thumb?fillHeight=513&quality=90&tag=t1
+GET /jellyfin/Items/moviepapermoons00000000000000000/Images/Thumb?fillHeight=513&quality=90&tag=t1
+GET /jellyfin/Items/epsignalnoise1300000000000000000/Images/Primary?fillHeight=513&quality=90&tag=p1
+GET /jellyfin/Items/moviethelastlighthouse0000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/movietidewater000000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49726)
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 694, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 359, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 763, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 476, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 442, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socket.py", line 738, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 54] Connection reset by peer
+----------------------------------------
+GET /jellyfin/Items/moviepapermoons00000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Logo?maxWidth=1152&quality=90&tag=l1
+GET /jellyfin/Items/moviedesertbloom0000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49727)
+GET /jellyfin/Items/movieembervalley0000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49728)
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 694, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 359, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 763, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 474, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 462, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/Users/runner/work/aiostreams-ios/aiostreams-ios/tools/demo-server/server.py", line 409, in do_GET
+    return self._send(200, body, "image/png" if kind == "logo" else "image/jpeg")
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/runner/work/aiostreams-ios/aiostreams-ios/tools/demo-server/server.py", line 323, in _send
+    self.wfile.write(body)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 842, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49724)
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 694, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 359, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 763, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 476, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 462, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/Users/runner/work/aiostreams-ios/aiostreams-ios/tools/demo-server/server.py", line 409, in do_GET
+    return self._send(200, body, "image/png" if kind == "logo" else "image/jpeg")
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/runner/work/aiostreams-ios/aiostreams-ios/tools/demo-server/server.py", line 323, in _send
+    self.wfile.write(body)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 842, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 694, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 359, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 763, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 474, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 462, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/Users/runner/work/aiostreams-ios/aiostreams-ios/tools/demo-server/server.py", line 409, in do_GET
+    return self._send(200, body, "image/png" if kind == "logo" else "image/jpeg")
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/runner/work/aiostreams-ios/aiostreams-ios/tools/demo-server/server.py", line 323, in _send
+    self.wfile.write(body)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 842, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Backdrop/0?fillHeight=1080&quality=90&tag=b1
+GET /jellyfin/Items/moviestatic000000000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/showsignalnoise00000000000000000/Images/Backdrop/0?fillHeight=1080&quality=90&tag=b1
+GET /jellyfin/Items?Fields=Genres,Overview,People,Taglines,Status,RemoteTrailers,ProviderIds&Ids=showsignalnoise00000000000000000&userId=useralex0000000000000000000
+GET /jellyfin/Items/showsignalnoise00000000000000000/Images/Logo?maxWidth=1248&quality=90&tag=l1
+GET /jellyfin/Items/showsignalnoise00000000000000000/Similar?Limit=12&userId=useralex000000000000000000000000
+GET /jellyfin/Shows/NextUp?Limit=1&SeriesId=showsignalnoise00000000000000000&userId=useralex000000000000000000000000
+GET /jellyfin/Shows/showsignalnoise00000000000000000/Seasons?userId=useralex000000000000000000000000
+GET /jellyfin/Items/showthequietyear0000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/showorbit00000000000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Shows/showsignalnoise00000000000000000/Episodes?Fields=Overview&SeasonId=seasonsignalnoise100000000000000&userId=useralex000000000000000000000000
+GET /jellyfin/Items/showsignalnoise00000000000000000/Images/Primary?fillHeight=672&quality=90&tag=p1
+GET /jellyfin/Items/showharbourlights000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/epsignalnoise1400000000000000000/Images/Primary?fillHeight=513&quality=90&tag=p1
+GET /jellyfin/Items/epsignalnoise1300000000000000000/Images/Primary?fillHeight=513&quality=90&tag=p1
+GET /jellyfin/Items/epsignalnoise1100000000000000000/Images/Primary?fillHeight=513&quality=90&tag=p1
+GET /jellyfin/Items/epsignalnoise1200000000000000000/Images/Primary?fillHeight=513&quality=90&tag=p1
+GET /jellyfin/System/Info/Public
+POST /jellyfin/Users/AuthenticateByName
+GET /jellyfin/Users/Public
+GET /jellyfin/UserItems/Resume?Limit=24&MediaTypes=Video&userId=useralex000000000000000000000000
+GET /jellyfin/Shows/NextUp?EnableResumable=false&Limit=24&userId=useralex000000000000000000000000
+GET /jellyfin/UserViews?userId=useralex000000000000000000000000
+GET /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+GET /jellyfin/Users/useralex000000000000000000000000/Images/Primary?fillHeight=96&quality=90
+GET /jellyfin/Items?Fields=Overview,Genres&IncludeItemTypes=Series&Limit=24&ParentId=viewshows00000000000000000000000&Recursive=true&userId=useralex0000000000000000
+GET /jellyfin/Items?Fields=Overview,Genres&IncludeItemTypes=Movie&Limit=24&ParentId=viewmovies0000000000000000000000&Recursive=true&userId=useralex00000000000000000
+GET /jellyfin/Users/Me
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Thumb?fillHeight=513&quality=90&tag=t1
+GET /jellyfin/Items/epsignalnoise1400000000000000000/Images/Primary?fillHeight=513&quality=90&tag=p1
+GET /jellyfin/Items/epsignalnoise1300000000000000000/Images/Primary?fillHeight=513&quality=90&tag=p1
+GET /jellyfin/Items/moviepapermoons00000000000000000/Images/Thumb?fillHeight=513&quality=90&tag=t1
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/moviestatic000000000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/movietidewater000000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/moviethelastlighthouse0000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items?Ids=movienorthernlights0000000000000&userId=useralex000000000000000000000000
+GET /jellyfin/Items/moviepapermoons00000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/moviedesertbloom0000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/movieembervalley0000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49881)
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 694, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 359, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 763, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 476, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 462, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/Users/runner/work/aiostreams-ios/aiostreams-ios/tools/demo-server/server.py", line 409, in do_GET
+    return self._send(200, body, "image/png" if kind == "logo" else "image/jpeg")
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/runner/work/aiostreams-ios/aiostreams-ios/tools/demo-server/server.py", line 323, in _send
+    self.wfile.write(body)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 842, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49883)
+BrokenPipeError: [Errno 32] Broken pipe
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Logo?maxWidth=1152&quality=90&tag=l1
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Backdrop/0?fillHeight=1080&quality=90&tag=b1
+----------------------------------------
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 694, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 359, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 763, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 476, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 442, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socket.py", line 738, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 54] Connection reset by peer
+----------------------------------------
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Backdrop/0?fillHeight=1080&quality=90&tag=b1
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Primary?fillHeight=672&quality=90&tag=p1
+GET /jellyfin/Items?Fields=Genres,Overview,People,Taglines,Status,RemoteTrailers,ProviderIds&Ids=movienorthernlights0000000000000&userId=useralex0000000000000000000
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Logo?maxWidth=1248&quality=90&tag=l1
+GET /jellyfin/Items/movienorthernlights0000000000000/Similar?Limit=12&userId=useralex000000000000000000000000
+GET /jellyfin/Items/moviestatic000000000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/moviedesertbloom0000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/moviepapermoons00000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/moviethelastlighthouse0000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/movietidewater000000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/movieembervalley0000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/movieevergreen000000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/System/Info/Public
+POST /jellyfin/Users/AuthenticateByName
+GET /jellyfin/Users/Public
+GET /jellyfin/UserItems/Resume?Limit=24&MediaTypes=Video&userId=useralex000000000000000000000000
+GET /jellyfin/UserViews?userId=useralex000000000000000000000000
+GET /jellyfin/Shows/NextUp?EnableResumable=false&Limit=24&userId=useralex000000000000000000000000
+GET /jellyfin/Users/useralex000000000000000000000000/Images/Primary?fillHeight=96&quality=90
+GET /jellyfin/Items/epsignalnoise1400000000000000000/Images/Primary?fillHeight=513&quality=90&tag=p1
+GET /jellyfin/Items?Fields=Overview,Genres&IncludeItemTypes=Movie&Limit=24&ParentId=viewmovies0000000000000000000000&Recursive=true&userId=useralex00000000000000000
+GET /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+GET /jellyfin/Items?Fields=Overview,Genres&IncludeItemTypes=Series&Limit=24&ParentId=viewshows00000000000000000000000&Recursive=true&userId=useralex0000000000000000
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Thumb?fillHeight=513&quality=90&tag=t1
+GET /jellyfin/Items/epsignalnoise1300000000000000000/Images/Primary?fillHeight=513&quality=90&tag=p1
+GET /jellyfin/Items/moviepapermoons00000000000000000/Images/Thumb?fillHeight=513&quality=90&tag=t1
+GET /jellyfin/Items/movieembervalley0000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/moviethelastlighthouse0000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/moviepapermoons00000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Users/Me
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/moviedesertbloom0000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/moviestatic000000000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/movietidewater000000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Backdrop/0?fillHeight=1080&quality=90&tag=b1
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Logo?maxWidth=1152&quality=90&tag=l1
+GET /jellyfin/Items?Ids=movienorthernlights0000000000000&userId=useralex000000000000000000000000
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Backdrop/0?fillHeight=540&quality=90&tag=b1
+POST /jellyfin/Items/movienorthernlights0000000000000/PlaybackInfo?userId=useralex000000000000000000000000
+GET /jellyfin/Items/showsignalnoise00000000000000000/Images/Logo?maxWidth=1152&quality=90&tag=l1
+GET /jellyfin/Items/showsignalnoise00000000000000000/Images/Backdrop/0?fillHeight=1080&quality=90&tag=b1
+GET /jellyfin/System/Info/Public
+POST /jellyfin/Users/AuthenticateByName
+GET /jellyfin/Users/Public
+GET /jellyfin/QuickConnect/Enabled
+GET /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+GET /jellyfin/Users/userjordan0000000000000000000000/Images/Primary?fillHeight=240&quality=90&tag=a1
+GET /jellyfin/Users/Me
+GET /jellyfin/Items?Ids=movienorthernlights0000000000000&userId=useralex000000000000000000000000
+GET /jellyfin/Users/useralex000000000000000000000000/Images/Primary?fillHeight=96&quality=90
+GET /jellyfin/UserItems/Resume?Limit=24&MediaTypes=Video&userId=useralex000000000000000000000000
+GET /jellyfin/Shows/NextUp?EnableResumable=false&Limit=24&userId=useralex000000000000000000000000
+GET /jellyfin/UserViews?userId=useralex000000000000000000000000
+POST /jellyfin/Items/movienorthernlights0000000000000/PlaybackInfo?userId=useralex000000000000000000000000
+GET /jellyfin/Items/moviepapermoons00000000000000000/Images/Thumb?fillHeight=513&quality=90&tag=t1
+GET /jellyfin/Items?Fields=Overview,Genres&IncludeItemTypes=Movie&Limit=24&ParentId=viewmovies0000000000000000000000&Recursive=true&userId=useralex00000000000000000
+POST /jellyfin/Items/movienorthernlights0000000000000/PlaybackInfo?userId=useralex000000000000000000000000
+GET /jellyfin/Items?Fields=Overview,Genres&IncludeItemTypes=Series&Limit=24&ParentId=viewshows00000000000000000000000&Recursive=true&userId=useralex0000000000000000
+GET /jellyfin/Items/epsignalnoise1300000000000000000/Images/Primary?fillHeight=513&quality=90&tag=p1
+GET /jellyfin/Items/epsignalnoise1400000000000000000/Images/Primary?fillHeight=513&quality=90&tag=p1
+GET /jellyfin/Items/moviethelastlighthouse0000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/moviedesertbloom0000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/moviepapermoons00000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/moviestatic000000000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Thumb?fillHeight=513&quality=90&tag=t1
+GET /jellyfin/Items/movietidewater000000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/movieembervalley0000000000000000/Images/Primary?fillHeight=756&quality=90&tag=p1
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Backdrop/0?fillHeight=1080&quality=90&tag=b1
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Logo?maxWidth=1152&quality=90&tag=l1
+GET /jellyfin/Videos/movienorthernlights0000000000000/stream?ApiKey=demo-token&MediaSourceId=src0movienorthernlights000000000&static=true
+GET /jellyfin/Videos/movienorthernlights0000000000000/stream?ApiKey=demo-token&MediaSourceId=src0movienorthernlights000000000&static=true
+POST /jellyfin/Sessions/Playing
+GET /jellyfin/Videos/movienorthernlights0000000000000/src0movienorthernlights000000000/Subtitles/2/0/Stream.srt
+GET /jellyfin/Items/showsignalnoise00000000000000000/Images/Backdrop/0?fillHeight=1080&quality=90&tag=b1
+GET /jellyfin/Items/showsignalnoise00000000000000000/Images/Logo?maxWidth=1152&quality=90&tag=l1
+POST /jellyfin/Sessions/Playing/Progress
+GET /jellyfin/Items/moviethelastlighthouse0000000000/Images/Logo?maxWidth=1152&quality=90&tag=l1
+GET /jellyfin/Items/moviethelastlighthouse0000000000/Images/Backdrop/0?fillHeight=1080&quality=90&tag=b1
+GET /jellyfin/System/Info/Public
+POST /jellyfin/Users/AuthenticateByName
+GET /jellyfin/Users/Public
+GET /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+GET /jellyfin/UserItems/Resume?Limit=24&MediaTypes=Video&userId=useralex000000000000000000000000
+GET /jellyfin/Shows/NextUp?EnableResumable=false&Limit=24&userId=useralex000000000000000000000000
+GET /jellyfin/UserViews?userId=useralex000000000000000000000000
+GET /jellyfin/Users/useralex000000000000000000000000/Images/Primary?fillHeight=96&quality=90
+GET /jellyfin/Users/Me
+GET /jellyfin/Items?Fields=Overview,Genres&IncludeItemTypes=Movie&Limit=24&ParentId=viewmovies0000000000000000000000&Recursive=true&userId=useralex00000000000000000
+GET /jellyfin/Items?Fields=Overview,Genres&IncludeItemTypes=Series&Limit=24&ParentId=viewshows00000000000000000000000&Recursive=true&userId=useralex0000000000000000
+GET /jellyfin/Items/moviepapermoons00000000000000000/Images/Thumb?fillHeight=513&quality=90&tag=t1
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Thumb?fillHeight=513&quality=90&tag=t1
+GET /jellyfin/Items/epsignalnoise1300000000000000000/Images/Primary?fillHeight=513&quality=90&tag=p1
+GET /jellyfin/Items/epsignalnoise1400000000000000000/Images/Primary?fillHeight=513&quality=90&tag=p1
+OPTIONS /jellyfin/Users/Me
+OPTIONS /jellyfin/System/Info/Public
+GET /jellyfin/Users/Me
+GET /jellyfin/System/Info/Public
+GET /jellyfin/System/Info/Public
+OPTIONS /jellyfin/UserViews?userId=useralex000000000000000000000000
+OPTIONS /jellyfin/Shows/Upcoming?userId=useralex000000000000000000000000&Limit=24
+GET /jellyfin/Users/Me
+GET /jellyfin/UserViews?userId=useralex000000000000000000000000
+GET /jellyfin/socket?api_key=demo-token&deviceId=B2E2EA57-4874-4B93-A1CC-1BEA13680D4A
+OPTIONS /jellyfin/UserItems/Resume?userId=useralex000000000000000000000000&Limit=24&MediaTypes=Video
+OPTIONS /jellyfin/Shows/NextUp?userId=useralex000000000000000000000000&Limit=24&EnableResumable=false
+OPTIONS /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+GET /jellyfin/Shows/Upcoming?userId=useralex000000000000000000000000&Limit=24
+OPTIONS /jellyfin/Items?userId=useralex000000000000000000000000&ParentId=viewmovies0000000000000000000000&StartIndex=0&Limit=20&IncludeItemTypes=Movie&Recursive=true&En
+OPTIONS /jellyfin/Genres?userId=useralex000000000000000000000000&ParentId=viewmovies0000000000000000000000
+OPTIONS /jellyfin/Genres?userId=useralex000000000000000000000000&ParentId=viewshows00000000000000000000000
+GET /jellyfin/UserItems/Resume?userId=useralex000000000000000000000000&Limit=24&MediaTypes=Video
+GET /jellyfin/Shows/NextUp?userId=useralex000000000000000000000000&Limit=24&EnableResumable=false
+GET /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+GET /jellyfin/Genres?userId=useralex000000000000000000000000&ParentId=viewmovies0000000000000000000000
+GET /jellyfin/Items?userId=useralex000000000000000000000000&ParentId=viewmovies0000000000000000000000&StartIndex=0&Limit=20&IncludeItemTypes=Movie&Recursive=true&En
+GET /jellyfin/Genres?userId=useralex000000000000000000000000&ParentId=viewshows00000000000000000000000
+OPTIONS /jellyfin/Items?userId=useralex000000000000000000000000&ParentId=viewmovies0000000000000000000000&IncludeItemTypes=Movie&Recursive=true&Limit=8
+OPTIONS /jellyfin/Items?userId=useralex000000000000000000000000&ParentId=viewshows00000000000000000000000&IncludeItemTypes=Series&Recursive=true&Limit=8
+GET /jellyfin/Items?userId=useralex000000000000000000000000&ParentId=viewmovies0000000000000000000000&IncludeItemTypes=Movie&Recursive=true&Limit=8
+GET /jellyfin/Items?userId=useralex000000000000000000000000&ParentId=viewshows00000000000000000000000&IncludeItemTypes=Series&Recursive=true&Limit=8
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Thumb?tag=t1&maxWidth=800&quality=90
+GET /jellyfin/Items/epsignalnoise1400000000000000000/Images/Primary?tag=p1&maxWidth=800&quality=90
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Primary?tag=p1&maxWidth=400&quality=90
+GET /jellyfin/Items/moviedesertbloom0000000000000000/Images/Primary?tag=p1&maxWidth=400&quality=90
+GET /jellyfin/Items/moviepapermoons00000000000000000/Images/Thumb?tag=t1&maxWidth=800&quality=90
+GET /jellyfin/Items/showsignalnoise00000000000000000/Images/Backdrop/0?tag=b1&maxWidth=2688&quality=90
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Backdrop/0?tag=b1&maxWidth=2688&quality=90
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Logo?tag=l1&maxWidth=1280&quality=90
+GET /jellyfin/Items/moviethelastlighthouse0000000000/Images/Primary?tag=p1&maxWidth=400&quality=90
+GET /jellyfin/Items/moviepapermoons00000000000000000/Images/Backdrop/0?tag=b1&maxWidth=2688&quality=90
+GET /jellyfin/Items/showsignalnoise00000000000000000/Images/Logo?tag=l1&maxWidth=1280&quality=90
+GET /jellyfin/socket?api_key=demo-token&deviceId=B2E2EA57-4874-4B93-A1CC-1BEA13680D4A
+GET /jellyfin/Items/epsignalnoise1300000000000000000/Images/Primary?tag=p1&maxWidth=800&quality=90
+GET /jellyfin/Items/movietidewater000000000000000000/Images/Primary?tag=p1&maxWidth=400&quality=90
+GET /jellyfin/Items/movieembervalley0000000000000000/Images/Primary?tag=p1&maxWidth=400&quality=90
+GET /jellyfin/Items/moviepapermoons00000000000000000/Images/Primary?tag=p1&maxWidth=400&quality=90
+GET /jellyfin/Items/moviepapermoons00000000000000000/Images/Logo?tag=l1&maxWidth=1280&quality=90
+GET /jellyfin/socket?api_key=demo-token&deviceId=B2E2EA57-4874-4B93-A1CC-1BEA13680D4A
+GET /jellyfin/Items/moviethelastlighthouse0000000000/Images/Logo?tag=l1&maxWidth=1280&quality=90
+GET /jellyfin/Items/moviethelastlighthouse0000000000/Images/Backdrop/0?tag=b1&maxWidth=2688&quality=90
+OPTIONS /jellyfin/Users/Me
+OPTIONS /jellyfin/System/Info/Public
+OPTIONS /jellyfin/UserViews?userId=useralex000000000000000000000000
+OPTIONS /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+OPTIONS /jellyfin/System/Info/Public
+GET /jellyfin/socket?api_key=demo-token&deviceId=B2E2EA57-4874-4B93-A1CC-1BEA13680D4A
+OPTIONS /jellyfin/Items?userId=useralex000000000000000000000000&Ids=showsignalnoise00000000000000000&Fields=AirTime%2CExternalUrls%2CGenres%2COverview%2CPeople%2CPrimar
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51514)
+OPTIONS /jellyfin/Users/Me
+GET /jellyfin/Users/Me
+GET /jellyfin/Users/Me
+GET /jellyfin/System/Info/Public
+Traceback (most recent call last):
+GET /jellyfin/UserViews?userId=useralex000000000000000000000000
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 694, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 359, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 763, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 476, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 442, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socket.py", line 738, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 54] Connection reset by peer
+----------------------------------------
+GET /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+GET /jellyfin/System/Info/Public
+GET /jellyfin/Items?userId=useralex000000000000000000000000&Ids=showsignalnoise00000000000000000&Fields=AirTime%2CExternalUrls%2CGenres%2COverview%2CPeople%2CPrimar
+OPTIONS /jellyfin/Shows/NextUp?userId=useralex000000000000000000000000&SeriesId=showsignalnoise00000000000000000&Limit=1
+OPTIONS /jellyfin/Shows/showsignalnoise00000000000000000/Seasons?userId=useralex000000000000000000000000
+GET /jellyfin/Shows/NextUp?userId=useralex000000000000000000000000&SeriesId=showsignalnoise00000000000000000&Limit=1
+GET /jellyfin/Shows/showsignalnoise00000000000000000/Seasons?userId=useralex000000000000000000000000
+OPTIONS /jellyfin/Sessions?ControllableByUserId=useralex000000000000000000000000
+GET /jellyfin/Items/showsignalnoise00000000000000000/Images/Primary?tag=p1&maxWidth=960&quality=90
+OPTIONS /jellyfin/Shows/showsignalnoise00000000000000000/Episodes?userId=useralex000000000000000000000000&SeasonId=seasonsignalnoise100000000000000
+OPTIONS /jellyfin/Shows/showsignalnoise00000000000000000/Episodes?userId=useralex000000000000000000000000&SeasonId=seasonsignalnoise200000000000000
+GET /jellyfin/Sessions?ControllableByUserId=useralex000000000000000000000000
+GET /jellyfin/Shows/showsignalnoise00000000000000000/Episodes?userId=useralex000000000000000000000000&SeasonId=seasonsignalnoise100000000000000
+GET /jellyfin/Shows/showsignalnoise00000000000000000/Episodes?userId=useralex000000000000000000000000&SeasonId=seasonsignalnoise200000000000000
+GET /jellyfin/Items/epsignalnoise1100000000000000000/Images/Primary?tag=p1&maxWidth=480&quality=90
+GET /jellyfin/Items/epsignalnoise1200000000000000000/Images/Primary?tag=p1&maxWidth=480&quality=90
+GET /jellyfin/socket?api_key=demo-token&deviceId=B2E2EA57-4874-4B93-A1CC-1BEA13680D4A
+GET /jellyfin/socket?api_key=demo-token&deviceId=B2E2EA57-4874-4B93-A1CC-1BEA13680D4A
+OPTIONS /jellyfin/Users/Me
+OPTIONS /jellyfin/System/Info/Public
+OPTIONS /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+OPTIONS /jellyfin/System/Info/Public
+GET /jellyfin/socket?api_key=demo-token&deviceId=B2E2EA57-4874-4B93-A1CC-1BEA13680D4A
+OPTIONS /jellyfin/Items?userId=useralex000000000000000000000000&Ids=movienorthernlights0000000000000&Fields=AirTime%2CExternalUrls%2CGenres%2COverview%2CPeople%2CPrimar
+OPTIONS /jellyfin/Users/Me
+OPTIONS /jellyfin/UserViews?userId=useralex000000000000000000000000
+GET /jellyfin/Users/Me
+GET /jellyfin/Items?userId=useralex000000000000000000000000&Ids=movienorthernlights0000000000000&Fields=AirTime%2CExternalUrls%2CGenres%2COverview%2CPeople%2CPrimar
+GET /jellyfin/UserViews?userId=useralex000000000000000000000000
+GET /jellyfin/Users/Me
+GET /jellyfin/System/Info/Public
+GET /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+GET /jellyfin/System/Info/Public
+OPTIONS /jellyfin/Sessions?ControllableByUserId=useralex000000000000000000000000
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Primary?tag=p1&maxWidth=960&quality=90
+GET /jellyfin/Sessions?ControllableByUserId=useralex000000000000000000000000
+OPTIONS /jellyfin/Items/movienorthernlights0000000000000/Similar?userId=useralex000000000000000000000000&Limit=20
+GET /jellyfin/Items/movienorthernlights0000000000000/Similar?userId=useralex000000000000000000000000&Limit=20
+GET /jellyfin/Items/moviestatic000000000000000000000/Images/Primary?tag=p1&maxWidth=400&quality=90
+GET /jellyfin/socket?api_key=demo-token&deviceId=B2E2EA57-4874-4B93-A1CC-1BEA13680D4A
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51729)
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 694, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 359, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 763, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 476, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 442, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socket.py", line 738, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 54] Connection reset by peer
+----------------------------------------
+GET /jellyfin/socket?api_key=demo-token&deviceId=B2E2EA57-4874-4B93-A1CC-1BEA13680D4A
+OPTIONS /jellyfin/Users/Me
+GET /jellyfin/socket?api_key=demo-token&deviceId=B2E2EA57-4874-4B93-A1CC-1BEA13680D4A
+OPTIONS /jellyfin/System/Info/Public
+OPTIONS /jellyfin/UserViews?userId=useralex000000000000000000000000
+OPTIONS /jellyfin/System/Info/Public
+OPTIONS /jellyfin/Items?userId=useralex000000000000000000000000&Ids=movienorthernlights0000000000000&Fields=AirTime%2CExternalUrls%2CGenres%2COverview%2CPeople%2CPrimar
+OPTIONS /jellyfin/Users/Me
+GET /jellyfin/Users/Me
+OPTIONS /jellyfin/Sessions?ControllableByUserId=useralex000000000000000000000000
+OPTIONS /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+OPTIONS /jellyfin/Items/movienorthernlights0000000000000/PlaybackInfo?userId=useralex000000000000000000000000
+GET /jellyfin/Items?userId=useralex000000000000000000000000&Ids=movienorthernlights0000000000000&Fields=AirTime%2CExternalUrls%2CGenres%2COverview%2CPeople%2CPrimar
+GET /jellyfin/System/Info/Public
+GET /jellyfin/Sessions?ControllableByUserId=useralex000000000000000000000000
+GET /jellyfin/System/Info/Public
+GET /jellyfin/Users/Me
+GET /jellyfin/UserViews?userId=useralex000000000000000000000000
+GET /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+POST /jellyfin/Items/movienorthernlights0000000000000/PlaybackInfo?userId=useralex000000000000000000000000
+OPTIONS /jellyfin/Items/movienorthernlights0000000000000/Similar?userId=useralex000000000000000000000000&Limit=20
+GET /jellyfin/Items/movienorthernlights0000000000000/Similar?userId=useralex000000000000000000000000&Limit=20
+GET /jellyfin/socket?api_key=demo-token&deviceId=B2E2EA57-4874-4B93-A1CC-1BEA13680D4A
+GET /jellyfin/socket?api_key=demo-token&deviceId=B2E2EA57-4874-4B93-A1CC-1BEA13680D4A
+OPTIONS /jellyfin/Users/Me
+OPTIONS /jellyfin/System/Info/Public
+OPTIONS /jellyfin/System/Info/Public
+OPTIONS /jellyfin/UserViews?userId=useralex000000000000000000000000
+OPTIONS /jellyfin/Items?userId=useralex000000000000000000000000&Ids=movienorthernlights0000000000000&Fields=AirTime%2CExternalUrls%2CGenres%2COverview%2CPeople%2CPrimar
+OPTIONS /jellyfin/Items/movienorthernlights0000000000000/PlaybackInfo?userId=useralex000000000000000000000000
+OPTIONS /jellyfin/Users/Me
+GET /jellyfin/Users/Me
+GET /jellyfin/socket?api_key=demo-token&deviceId=B2E2EA57-4874-4B93-A1CC-1BEA13680D4A
+OPTIONS /jellyfin/DisplayPreferences/aiostreams-web-tracks?client=aiostreams-web-tracks&userId=useralex000000000000000000000000
+GET /jellyfin/System/Info/Public
+OPTIONS /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+GET /jellyfin/System/Info/Public
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Logo?tag=l1&maxWidth=1920&quality=90
+GET /jellyfin/UserViews?userId=useralex000000000000000000000000
+GET /jellyfin/Items?userId=useralex000000000000000000000000&Ids=movienorthernlights0000000000000&Fields=AirTime%2CExternalUrls%2CGenres%2COverview%2CPeople%2CPrimar
+POST /jellyfin/Items/movienorthernlights0000000000000/PlaybackInfo?userId=useralex000000000000000000000000
+GET /jellyfin/Users/Me
+GET /jellyfin/DisplayPreferences/aiostreams-web-tracks?client=aiostreams-web-tracks&userId=useralex000000000000000000000000
+GET /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+OPTIONS /jellyfin/MediaSegments/movienorthernlights0000000000000
+GET /jellyfin/MediaSegments/movienorthernlights0000000000000
+GET /jellyfin/Videos/movienorthernlights0000000000000/stream?static=true&MediaSourceId=src0movienorthernlights000000000&ApiKey=demo-token
+GET /jellyfin/Videos/movienorthernlights0000000000000/stream?static=true&MediaSourceId=src0movienorthernlights000000000&ApiKey=demo-token
+GET /jellyfin/socket?api_key=demo-token&deviceId=B2E2EA57-4874-4B93-A1CC-1BEA13680D4A
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 52017)
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 694, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 359, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 763, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 476, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 442, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socket.py", line 738, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 54] Connection reset by peer
+----------------------------------------
+OPTIONS /jellyfin/Sessions/Playing
+POST /jellyfin/Sessions/Playing
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Backdrop/0?tag=b1&maxWidth=2688&quality=90
+GET /jellyfin/socket?api_key=demo-token&deviceId=B2E2EA57-4874-4B93-A1CC-1BEA13680D4A
+OPTIONS /jellyfin/Sessions/Playing/Progress
+POST /jellyfin/Sessions/Playing/Progress
+OPTIONS /jellyfin/Users/Me
+OPTIONS /jellyfin/System/Info/Public
+GET /jellyfin/System/Info/Public
+GET /jellyfin/Users/Me
+GET /jellyfin/System/Info/Public
+OPTIONS /jellyfin/UserViews?userId=useralex000000000000000000000000
+OPTIONS /jellyfin/Shows/Upcoming?userId=useralex000000000000000000000000&Limit=24
+GET /jellyfin/Users/Me
+GET /jellyfin/UserViews?userId=useralex000000000000000000000000
+GET /jellyfin/socket?api_key=demo-token&deviceId=02B61650-8B03-4495-A089-DC1DA50A2102
+OPTIONS /jellyfin/Items?userId=useralex000000000000000000000000&ParentId=viewmovies0000000000000000000000&StartIndex=0&Limit=20&IncludeItemTypes=Movie&Recursive=true&En
+OPTIONS /jellyfin/Genres?userId=useralex000000000000000000000000&ParentId=viewmovies0000000000000000000000
+OPTIONS /jellyfin/UserItems/Resume?userId=useralex000000000000000000000000&Limit=24&MediaTypes=Video
+GET /jellyfin/Items?userId=useralex000000000000000000000000&ParentId=viewmovies0000000000000000000000&StartIndex=0&Limit=20&IncludeItemTypes=Movie&Recursive=true&En
+GET /jellyfin/Genres?userId=useralex000000000000000000000000&ParentId=viewmovies0000000000000000000000
+OPTIONS /jellyfin/Shows/NextUp?userId=useralex000000000000000000000000&Limit=24&EnableResumable=false
+OPTIONS /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+GET /jellyfin/Shows/Upcoming?userId=useralex000000000000000000000000&Limit=24
+OPTIONS /jellyfin/Items?userId=useralex000000000000000000000000&ParentId=viewmovies0000000000000000000000&IncludeItemTypes=Movie&Recursive=true&Limit=8
+GET /jellyfin/Shows/NextUp?userId=useralex000000000000000000000000&Limit=24&EnableResumable=false
+GET /jellyfin/Items?userId=useralex000000000000000000000000&ParentId=viewmovies0000000000000000000000&IncludeItemTypes=Movie&Recursive=true&Limit=8
+GET /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+OPTIONS /jellyfin/Genres?userId=useralex000000000000000000000000&ParentId=viewshows00000000000000000000000
+GET /jellyfin/UserItems/Resume?userId=useralex000000000000000000000000&Limit=24&MediaTypes=Video
+GET /jellyfin/Genres?userId=useralex000000000000000000000000&ParentId=viewshows00000000000000000000000
+OPTIONS /jellyfin/Items?userId=useralex000000000000000000000000&ParentId=viewshows00000000000000000000000&IncludeItemTypes=Series&Recursive=true&Limit=8
+GET /jellyfin/Items?userId=useralex000000000000000000000000&ParentId=viewshows00000000000000000000000&IncludeItemTypes=Series&Recursive=true&Limit=8
+GET /jellyfin/Items/moviepapermoons00000000000000000/Images/Logo?tag=l1&maxWidth=960&quality=90
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Backdrop/0?tag=b1&maxWidth=2752&quality=90
+GET /jellyfin/Items/moviepapermoons00000000000000000/Images/Backdrop/0?tag=b1&maxWidth=2752&quality=90
+GET /jellyfin/Items/showsignalnoise00000000000000000/Images/Backdrop/0?tag=b1&maxWidth=2752&quality=90
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Logo?tag=l1&maxWidth=960&quality=90
+OPTIONS /jellyfin/Items?userId=useralex000000000000000000000000&ParentId=viewshows00000000000000000000000&StartIndex=0&Limit=20&IncludeItemTypes=Series&Recursive=true&E
+GET /jellyfin/Items/showsignalnoise00000000000000000/Images/Logo?tag=l1&maxWidth=960&quality=90
+GET /jellyfin/Items?userId=useralex000000000000000000000000&ParentId=viewshows00000000000000000000000&StartIndex=0&Limit=20&IncludeItemTypes=Series&Recursive=true&E
+GET /jellyfin/Items/moviepapermoons00000000000000000/Images/Thumb?tag=t1&maxWidth=640&quality=90
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Thumb?tag=t1&maxWidth=640&quality=90
+GET /jellyfin/Items/epsignalnoise1400000000000000000/Images/Primary?tag=p1&maxWidth=640&quality=90
+GET /jellyfin/Items/moviedesertbloom0000000000000000/Images/Primary?tag=p1&maxWidth=400&quality=90
+GET /jellyfin/Items/moviepapermoons00000000000000000/Images/Primary?tag=p1&maxWidth=400&quality=90
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Primary?tag=p1&maxWidth=400&quality=90
+GET /jellyfin/Items/movietidewater000000000000000000/Images/Primary?tag=p1&maxWidth=400&quality=90
+GET /jellyfin/Items/moviethelastlighthouse0000000000/Images/Primary?tag=p1&maxWidth=400&quality=90
+GET /jellyfin/Items/movieembervalley0000000000000000/Images/Primary?tag=p1&maxWidth=400&quality=90
+GET /jellyfin/Items/epsignalnoise1300000000000000000/Images/Primary?tag=p1&maxWidth=640&quality=90
+GET /jellyfin/Items/movieevergreen000000000000000000/Images/Primary?tag=p1&maxWidth=400&quality=90
+GET /jellyfin/Items/moviestatic000000000000000000000/Images/Primary?tag=p1&maxWidth=400&quality=90
+GET /jellyfin/socket?api_key=demo-token&deviceId=02B61650-8B03-4495-A089-DC1DA50A2102
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 52987)
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 694, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 359, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 763, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 476, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 442, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socket.py", line 738, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 54] Connection reset by peer
+----------------------------------------
+GET /jellyfin/Items/showsignalnoise00000000000000000/Images/Primary?tag=p1&maxWidth=400&quality=90
+GET /jellyfin/Items/showorbit00000000000000000000000/Images/Primary?tag=p1&maxWidth=400&quality=90
+GET /jellyfin/Items/showthequietyear0000000000000000/Images/Primary?tag=p1&maxWidth=400&quality=90
+GET /jellyfin/Items/showharbourlights000000000000000/Images/Primary?tag=p1&maxWidth=400&quality=90
+GET /jellyfin/socket?api_key=demo-token&deviceId=02B61650-8B03-4495-A089-DC1DA50A2102
+GET /jellyfin/Items/moviethelastlighthouse0000000000/Images/Backdrop/0?tag=b1&maxWidth=2752&quality=90
+GET /jellyfin/Items/moviethelastlighthouse0000000000/Images/Logo?tag=l1&maxWidth=960&quality=90
+GET /jellyfin/Items/showharbourlights000000000000000/Images/Logo?tag=l1&maxWidth=960&quality=90
+GET /jellyfin/Items/showharbourlights000000000000000/Images/Backdrop/0?tag=b1&maxWidth=2752&quality=90
+OPTIONS /jellyfin/Users/Me
+OPTIONS /jellyfin/System/Info/Public
+OPTIONS /jellyfin/System/Info/Public
+OPTIONS /jellyfin/Items?userId=useralex000000000000000000000000&Ids=showsignalnoise00000000000000000&Fields=AirTime%2CExternalUrls%2CGenres%2COverview%2CPeople%2CPrimar
+OPTIONS /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+OPTIONS /jellyfin/Users/Me
+GET /jellyfin/socket?api_key=demo-token&deviceId=02B61650-8B03-4495-A089-DC1DA50A2102
+OPTIONS /jellyfin/UserViews?userId=useralex000000000000000000000000
+GET /jellyfin/System/Info/Public
+GET /jellyfin/Users/Me
+GET /jellyfin/System/Info/Public
+GET /jellyfin/UserViews?userId=useralex000000000000000000000000
+GET /jellyfin/Items?userId=useralex000000000000000000000000&Ids=showsignalnoise00000000000000000&Fields=AirTime%2CExternalUrls%2CGenres%2COverview%2CPeople%2CPrimar
+GET /jellyfin/Users/Me
+GET /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+OPTIONS /jellyfin/Shows/NextUp?userId=useralex000000000000000000000000&SeriesId=showsignalnoise00000000000000000&Limit=1
+OPTIONS /jellyfin/Shows/showsignalnoise00000000000000000/Seasons?userId=useralex000000000000000000000000
+GET /jellyfin/Shows/NextUp?userId=useralex000000000000000000000000&SeriesId=showsignalnoise00000000000000000&Limit=1
+OPTIONS /jellyfin/Sessions?ControllableByUserId=useralex000000000000000000000000
+GET /jellyfin/Shows/showsignalnoise00000000000000000/Seasons?userId=useralex000000000000000000000000
+GET /jellyfin/Items/showsignalnoise00000000000000000/Images/Primary?tag=p1&maxWidth=640&quality=90
+GET /jellyfin/Sessions?ControllableByUserId=useralex000000000000000000000000
+OPTIONS /jellyfin/Shows/showsignalnoise00000000000000000/Episodes?userId=useralex000000000000000000000000&SeasonId=seasonsignalnoise100000000000000
+OPTIONS /jellyfin/Shows/showsignalnoise00000000000000000/Episodes?userId=useralex000000000000000000000000&SeasonId=seasonsignalnoise200000000000000
+GET /jellyfin/Shows/showsignalnoise00000000000000000/Episodes?userId=useralex000000000000000000000000&SeasonId=seasonsignalnoise100000000000000
+GET /jellyfin/Shows/showsignalnoise00000000000000000/Episodes?userId=useralex000000000000000000000000&SeasonId=seasonsignalnoise200000000000000
+OPTIONS /jellyfin/Items/showsignalnoise00000000000000000/Similar?userId=useralex000000000000000000000000&Limit=20
+GET /jellyfin/Items/showsignalnoise00000000000000000/Similar?userId=useralex000000000000000000000000&Limit=20
+GET /jellyfin/Items/epsignalnoise1400000000000000000/Images/Primary?tag=p1&maxWidth=800&quality=90
+GET /jellyfin/Items/epsignalnoise1300000000000000000/Images/Primary?tag=p1&maxWidth=800&quality=90
+GET /jellyfin/Items/epsignalnoise1200000000000000000/Images/Primary?tag=p1&maxWidth=800&quality=90
+GET /jellyfin/Items/epsignalnoise1500000000000000000/Images/Primary?tag=p1&maxWidth=800&quality=90
+GET /jellyfin/Items/epsignalnoise1100000000000000000/Images/Primary?tag=p1&maxWidth=800&quality=90
+GET /jellyfin/socket?api_key=demo-token&deviceId=02B61650-8B03-4495-A089-DC1DA50A2102
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 53203)
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 694, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 359, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 763, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 476, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 442, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socket.py", line 738, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 54] Connection reset by peer
+----------------------------------------
+GET /jellyfin/Items/epsignalnoise1600000000000000000/Images/Primary?tag=p1&maxWidth=800&quality=90
+GET /jellyfin/socket?api_key=demo-token&deviceId=02B61650-8B03-4495-A089-DC1DA50A2102
+OPTIONS /jellyfin/Users/Me
+OPTIONS /jellyfin/System/Info/Public
+OPTIONS /jellyfin/System/Info/Public
+OPTIONS /jellyfin/Items?userId=useralex000000000000000000000000&Ids=movienorthernlights0000000000000&Fields=AirTime%2CExternalUrls%2CGenres%2COverview%2CPeople%2CPrimar
+OPTIONS /jellyfin/UserViews?userId=useralex000000000000000000000000
+OPTIONS /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+GET /jellyfin/Users/Me
+GET /jellyfin/socket?api_key=demo-token&deviceId=02B61650-8B03-4495-A089-DC1DA50A2102
+GET /jellyfin/System/Info/Public
+GET /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+GET /jellyfin/Users/Me
+GET /jellyfin/System/Info/Public
+GET /jellyfin/Items?userId=useralex000000000000000000000000&Ids=movienorthernlights0000000000000&Fields=AirTime%2CExternalUrls%2CGenres%2COverview%2CPeople%2CPrimar
+GET /jellyfin/UserViews?userId=useralex000000000000000000000000
+OPTIONS /jellyfin/Sessions?ControllableByUserId=useralex000000000000000000000000
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Primary?tag=p1&maxWidth=640&quality=90
+GET /jellyfin/Sessions?ControllableByUserId=useralex000000000000000000000000
+OPTIONS /jellyfin/Items/movienorthernlights0000000000000/Similar?userId=useralex000000000000000000000000&Limit=20
+GET /jellyfin/Items/movienorthernlights0000000000000/Similar?userId=useralex000000000000000000000000&Limit=20
+GET /jellyfin/socket?api_key=demo-token&deviceId=02B61650-8B03-4495-A089-DC1DA50A2102
+GET /jellyfin/socket?api_key=demo-token&deviceId=02B61650-8B03-4495-A089-DC1DA50A2102
+OPTIONS /jellyfin/Users/Me
+OPTIONS /jellyfin/System/Info/Public
+OPTIONS /jellyfin/System/Info/Public
+OPTIONS /jellyfin/Items?userId=useralex000000000000000000000000&Ids=movienorthernlights0000000000000&Fields=AirTime%2CExternalUrls%2CGenres%2COverview%2CPeople%2CPrimar
+GET /jellyfin/socket?api_key=demo-token&deviceId=02B61650-8B03-4495-A089-DC1DA50A2102
+OPTIONS /jellyfin/Users/Me
+OPTIONS /jellyfin/UserViews?userId=useralex000000000000000000000000
+OPTIONS /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+GET /jellyfin/Users/Me
+OPTIONS /jellyfin/Items/movienorthernlights0000000000000/PlaybackInfo?userId=useralex000000000000000000000000
+OPTIONS /jellyfin/Sessions?ControllableByUserId=useralex000000000000000000000000
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Backdrop/0?tag=b1&maxWidth=1920&quality=90
+OPTIONS /jellyfin/Items/movienorthernlights0000000000000/Similar?userId=useralex000000000000000000000000&Limit=20
+GET /jellyfin/UserViews?userId=useralex000000000000000000000000
+GET /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+GET /jellyfin/System/Info/Public
+GET /jellyfin/System/Info/Public
+GET /jellyfin/Items?userId=useralex000000000000000000000000&Ids=movienorthernlights0000000000000&Fields=AirTime%2CExternalUrls%2CGenres%2COverview%2CPeople%2CPrimar
+GET /jellyfin/Items/movienorthernlights0000000000000/Similar?userId=useralex000000000000000000000000&Limit=20
+GET /jellyfin/Users/Me
+GET /jellyfin/Sessions?ControllableByUserId=useralex000000000000000000000000
+POST /jellyfin/Items/movienorthernlights0000000000000/PlaybackInfo?userId=useralex000000000000000000000000
+GET /jellyfin/socket?api_key=demo-token&deviceId=02B61650-8B03-4495-A089-DC1DA50A2102
+GET /jellyfin/socket?api_key=demo-token&deviceId=02B61650-8B03-4495-A089-DC1DA50A2102
+OPTIONS /jellyfin/Users/Me
+GET /jellyfin/socket?api_key=demo-token&deviceId=02B61650-8B03-4495-A089-DC1DA50A2102
+OPTIONS /jellyfin/System/Info/Public
+OPTIONS /jellyfin/DisplayPreferences/aiostreams-web-tracks?client=aiostreams-web-tracks&userId=useralex000000000000000000000000
+----------------------------------------
+OPTIONS /jellyfin/System/Info/Public
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Logo?tag=l1&maxWidth=1280&quality=90
+OPTIONS /jellyfin/UserViews?userId=useralex000000000000000000000000
+OPTIONS /jellyfin/Items/movienorthernlights0000000000000/PlaybackInfo?userId=useralex000000000000000000000000
+OPTIONS /jellyfin/Users/Me
+OPTIONS /jellyfin/Items?userId=useralex000000000000000000000000&Ids=movienorthernlights0000000000000&Fields=AirTime%2CExternalUrls%2CGenres%2COverview%2CPeople%2CPrimar
+OPTIONS /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+GET /jellyfin/Users/Me
+GET /jellyfin/System/Info/Public
+GET /jellyfin/DisplayPreferences/aiostreams-web-tracks?client=aiostreams-web-tracks&userId=useralex000000000000000000000000
+Exception occurred during processing of request from ('127.0.0.1', 53681)
+GET /jellyfin/System/Info/Public
+GET /jellyfin/UserViews?userId=useralex000000000000000000000000
+POST /jellyfin/Items/movienorthernlights0000000000000/PlaybackInfo?userId=useralex000000000000000000000000
+GET /jellyfin/socket?api_key=demo-token&deviceId=02B61650-8B03-4495-A089-DC1DA50A2102
+GET /jellyfin/Users/Me
+GET /jellyfin/Items?userId=useralex000000000000000000000000&Ids=movienorthernlights0000000000000&Fields=AirTime%2CExternalUrls%2CGenres%2COverview%2CPeople%2CPrimar
+GET /jellyfin/DisplayPreferences/aiostreams-web?client=aiostreams-web&userId=useralex000000000000000000000000
+Traceback (most recent call last):
+OPTIONS /jellyfin/MediaSegments/movienorthernlights0000000000000
+GET /jellyfin/Videos/movienorthernlights0000000000000/stream?static=true&MediaSourceId=src0movienorthernlights000000000&ApiKey=demo-token
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 694, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+GET /jellyfin/Videos/movienorthernlights0000000000000/stream?static=true&MediaSourceId=src0movienorthernlights000000000&ApiKey=demo-token
+GET /jellyfin/MediaSegments/movienorthernlights0000000000000
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 359, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 763, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 476, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 442, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socket.py", line 738, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 54] Connection reset by peer
+----------------------------------------
+OPTIONS /jellyfin/Sessions/Playing
+GET /jellyfin/Items/movienorthernlights0000000000000/Images/Backdrop/0?tag=b1&maxWidth=1920&quality=90
+POST /jellyfin/Sessions/Playing
+GET /jellyfin/socket?api_key=demo-token&deviceId=02B61650-8B03-4495-A089-DC1DA50A2102
+OPTIONS /jellyfin/Sessions/Playing/Progress
+POST /jellyfin/Sessions/Playing/Progress
+GET /jellyfin/socket?api_key=demo-token&deviceId=02B61650-8B03-4495-A089-DC1DA50A2102
+OPTIONS /jellyfin/Sessions/Playing/Progress
+POST /jellyfin/Sessions/Playing/Progress
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 53684)
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 694, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 359, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 763, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 476, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 442, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socket.py", line 738, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 54] Connection reset by peer
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 53687)
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 694, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 359, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socketserver.py", line 763, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 476, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/server.py", line 442, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/socket.py", line 738, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 54] Connection reset by peer
+----------------------------------------
