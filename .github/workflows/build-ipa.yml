@@ -15,6 +15,13 @@ on:
         description: Build with TrueHD Atmos and DTS:X height channels (may need patent licences; not for public releases)
         type: boolean
         default: false
+      runner:
+        description: Runner image (xcode-27 has Xcode 27.1, for iPhone Duo's full inner display)
+        type: choice
+        options:
+          - xcode-27
+          - macos-26
+        default: xcode-27
 
 permissions:
   contents: write
@@ -25,7 +32,8 @@ concurrency:
 
 jobs:
   build:
-    runs-on: macos-26
+    # Xcode 27.1 builds against the iOS 27.1 SDK, which iPhone Duo's inner display needs to be used whole.
+    runs-on: ${{ inputs.runner || 'xcode-27' }}
     timeout-minutes: 60
     env:
       AIOSTREAMS_REF: ${{ inputs.aiostreams_ref }}
@@ -40,12 +48,16 @@ jobs:
         with:
           fetch-depth: 0
 
-      # AetherEngine supports Xcode 27; 26.3 is its best-effort floor. Take the newest on the runner.
+      # AetherEngine supports Xcode 27; 26.3 is its best-effort floor. Take the newest released one on
+      # the runner, a beta only where there's nothing else.
       - name: Select Xcode
         run: |
-          xcode=$(ls -d /Applications/Xcode_2[6-9]*.app | sort -V | tail -n 1)
+          ls -d /Applications/Xcode*.app
+          xcode=$(ls -d /Applications/Xcode_2[6-9]*.app | grep -vi beta | sort -V | tail -n 1)
+          [ -n "$xcode" ] || xcode=$(ls -d /Applications/Xcode_2[6-9]*.app | sort -V | tail -n 1)
           sudo xcode-select -s "$xcode"
           xcodebuild -version
+          xcrun --sdk iphoneos --show-sdk-version
 
       - uses: pnpm/action-setup@v4
         with:

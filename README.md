@@ -31,7 +31,7 @@ An unofficial iPhone, iPad and Apple TV port of the [AIOStreams](https://github.
   <img src="docs/screenshots/ipad-show.jpg" width="49%" alt="A show on iPad">
 </p>
 
-The iPhone and iPad app resizes: Split View and Slide Over on iPad, and iPhone Duo's inner and outer displays and Split View. To use all of the Duo's inner display, it needs building with Xcode 27.1 or later, which the workflow picks up once GitHub's runners have it.
+The iPhone and iPad app resizes: Split View and Slide Over on iPad, and iPhone Duo's inner and outer displays and Split View. To use all of the Duo's inner display, it needs building with Xcode 27.1 or later: the workflow builds on GitHub's `xcode-27` runner image for that, and Run workflow can still choose `macos-26`.
 
 The screenshots come from Apple's simulators connected to a demo server with a made-up catalogue. Every title, poster and video in them is drawn by `tools/demo-server`. To retake them, run the **Screenshots** workflow from the Actions tab, or `scripts/screenshots.sh` on a Mac.
 
