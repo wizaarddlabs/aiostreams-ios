@@ -346,7 +346,7 @@ private struct PlayerChrome: View {
             while countdownLeft > 0 {
                 try? await Task.sleep(for: .milliseconds(250))
                 if Task.isCancelled { return }
-                countdownLeft -= 0.25
+                countdownLeft = max(0, countdownLeft - 0.25)
             }
             playOn(auto: true)
         }
@@ -604,7 +604,7 @@ private struct PlayerChrome: View {
         return model.duration - prefs.nextLead
     }
 
-    private var upNextDue: Bool { promptAt.map { model.position >= $0 } ?? false }
+    private var upNextDue: Bool { model.started && (promptAt.map { model.position >= $0 } ?? false) }
     private var upNextShown: Bool { upNextDue && !upNextDismissed && !askingStill && !playingOn && finding == nil }
     private var counting: Bool { upNextShown && prefs.autoplayNext && !model.paused }
 

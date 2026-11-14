@@ -36,6 +36,7 @@ struct Item: Decodable, Identifiable, Hashable {
     var officialRating: String?
     var communityRating: Double?
     var genres: [String]?
+    var tags: [String]?
     var collectionType: String?
     var imageTags: [String: String]?
     var backdropImageTags: [String]?
@@ -82,7 +83,9 @@ struct Item: Decodable, Identifiable, Hashable {
     /// decoder lowers the first letter of these keys, so they're matched without case.
     var hasAnimeIds: Bool {
         let keys = Set((providerIds ?? [:]).filter { !$0.value.isEmpty }.keys.map { $0.lowercased() })
-        return !keys.isDisjoint(with: ["anilist", "kitsu", "myanimelist", "anidb"])
+        if !keys.isDisjoint(with: ["anilist", "kitsu", "myanimelist", "anidb"]) { return true }
+        // Or an Anime genre or tag, as the web app also counts since Android v0.15.0.
+        return ((genres ?? []) + (tags ?? [])).contains { $0.lowercased() == "anime" }
     }
 
     var starts: Date? { parseDate(startDate) }

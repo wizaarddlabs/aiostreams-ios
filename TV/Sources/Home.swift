@@ -7,7 +7,7 @@ import SwiftUI
 private let heroPerLibrary = 8
 private let heroMax = 10
 
-/// What's partway through, then the next episodes, one card a show, most recently watched first,
+/// What's partway through, then the next episodes, one card a show, most recently watched or aired first,
 /// as the web app merges them (lib/jellyfin/queries.ts `mergeRows`).
 func mergeRows(_ resume: [Item], _ nextUp: [Item]) -> [Item] {
     var seen = Set<String>()
@@ -17,7 +17,13 @@ func mergeRows(_ resume: [Item], _ nextUp: [Item]) -> [Item] {
         seen.formUnion(keys)
         return true
     }
-    let watched = { (item: Item) in parseDate(item.aiostreams?.showWatchedAt ?? item.userData?.lastPlayedDate) ?? .distantPast }
+    // The later of when it was last watched and, for a next episode, when it aired (not still to come),
+    // as the web app sorts it since Android v0.15.0; a next episode with no watch time stays last.
+    let watched = { (item: Item) -> Date in
+        guard let last = parseDate(item.aiostreams?.showWatchedAt ?? item.userData?.lastPlayedDate) else { return .distantPast }
+        let aired = min(parseDate(item.premiereDate) ?? .distantPast, Date())
+        return max(last, aired)
+    }
     // Stable, so next episodes without a time stay after what's partway through.
     return kept.enumerated()
         .sorted { a, b in

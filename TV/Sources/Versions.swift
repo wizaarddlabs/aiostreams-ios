@@ -160,6 +160,11 @@ struct VersionsView: View {
             // Versions only the app's own player could open from YouTube aren't offered here.
             result.mediaSources = result.mediaSources?.filter { $0.aiostreams?.ytId == nil }
             info = result
+            // A title's only version plays without being listed, as the web app does, unless the
+            // list was asked for (Choose a version) or reloaded.
+            if !refresh, choice.mode != .list, let only = sources.first, sources.count == 1 {
+                await open(only)
+            }
         } catch {
             self.error = error.localizedDescription
         }

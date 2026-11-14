@@ -22,6 +22,9 @@ enum SharedEngine {
 @MainActor
 final class PlayerModel: ObservableObject {
     @Published private(set) var paused = false
+    /// The title has played: until then the shared engine can still hold the last one's length
+    /// and position, which the next episode's offer mustn't read.
+    @Published private(set) var started = false
     @Published private(set) var waiting = true
     @Published private(set) var position: Double = 0
     @Published private(set) var duration: Double = 0
@@ -114,7 +117,9 @@ final class PlayerModel: ObservableObject {
             .sink { [weak self] state in
                 guard let self else { return }
                 switch state {
-                case .playing: self.setPaused(false)
+                case .playing:
+                    self.started = true
+                    self.setPaused(false)
                 case .paused: self.setPaused(true)
                 case .ended: self.finished = true
                 case .error(let message):
@@ -269,7 +274,7 @@ final class PlayerModel: ObservableObject {
         let item = request.item
         let ids = [item.id, item.seasonId, item.seriesId].compactMap { $0 }
         let result: ItemsResult? = try? await client.get("/Items", [
-            "userId": userId, "Ids": ids.joined(separator: ","), "Fields": "ProviderIds",
+            "userId": userId, "Ids": ids.joined(separator: ","), "Fields": "ProviderIds,Genres,Tags",
         ])
         return (result?.items ?? []).contains(where: \.hasAnimeIds)
     }
