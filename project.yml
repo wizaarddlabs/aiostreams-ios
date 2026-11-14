@@ -53,7 +53,8 @@ targets:
           - UIInterfaceOrientationPortraitUpsideDown
           - UIInterfaceOrientationLandscapeLeft
           - UIInterfaceOrientationLandscapeRight
-        UIRequiresFullScreen: true
+        # Resizable: Split View and Slide Over on iPad, and iPhone Duo's folding and Split View, where
+        # an app that asks for the full screen is held in a fixed window.
         UIViewControllerBasedStatusBarAppearance: true
         UIStatusBarStyle: UIStatusBarStyleLightContent
         UIUserInterfaceStyle: Dark

@@ -31,6 +31,8 @@ An unofficial iPhone, iPad and Apple TV port of the [AIOStreams](https://github.
   <img src="docs/screenshots/ipad-show.jpg" width="49%" alt="A show on iPad">
 </p>
 
+The iPhone and iPad app resizes: Split View and Slide Over on iPad, and iPhone Duo's inner and outer displays and Split View. To use all of the Duo's inner display, it needs building with Xcode 27.1 or later, which the workflow picks up once GitHub's runners have it.
+
 The screenshots come from Apple's simulators connected to a demo server with a made-up catalogue. Every title, poster and video in them is drawn by `tools/demo-server`. To retake them, run the **Screenshots** workflow from the Actions tab, or `scripts/screenshots.sh` on a Mac.
 
 It follows the design of the official Android and desktop apps, which are a web view over a native player. Their source is public under AGPL-3.0, so this port builds from that source rather than from the APK.

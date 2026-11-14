@@ -262,12 +262,22 @@ final class RootViewController: UIViewController, WKNavigationDelegate, WKUIDele
         }
     }
 
+    /// The app has the whole screen, rather than a part of it in Split View or Slide Over.
+    private var ownsScreen: Bool {
+        guard let window = view.window, let screen = window.windowScene?.screen else { return true }
+        let size = window.bounds.size, full = screen.bounds.size
+        return abs(size.width - full.width) < 1 && abs(size.height - full.height) < 1
+            || abs(size.width - full.height) < 1 && abs(size.height - full.width) < 1
+    }
+
     private func setFullscreen(_ on: Bool) {
         fullscreen = on
-        AppDelegate.orientations = on ? .landscape : .allButUpsideDown
+        // Landscape for the player only with the whole screen; beside another app, the window stays as it is.
+        let turns = on && ownsScreen
+        AppDelegate.orientations = turns ? .landscape : .allButUpsideDown
         setNeedsUpdateOfSupportedInterfaceOrientations()
-        if let scene = view.window?.windowScene {
-            scene.requestGeometryUpdate(.iOS(interfaceOrientations: on ? .landscape : .allButUpsideDown)) { error in
+        if let scene = view.window?.windowScene, turns || !on {
+            scene.requestGeometryUpdate(.iOS(interfaceOrientations: turns ? .landscape : .allButUpsideDown)) { error in
                 AppLog.info("app", "orientation: \(error.localizedDescription)")
             }
         }
