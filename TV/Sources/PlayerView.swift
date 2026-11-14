@@ -307,12 +307,22 @@ final class PlayerModel: ObservableObject {
 
     /// Where a held left or right, or a swipe, has scrubbed to, while it lasts.
     @Published private(set) var scrubTarget: Double? {
-        didSet { if let scrubTarget { wantPreview(scrubTarget) } else { preview = nil } }
+        didSet {
+            if let scrubTarget { wantPreview(scrubTarget) } else if oldValue != nil { endPreviews() }
+        }
     }
     /// A frame from where the scrub would land, shown over the bar.
     @Published private(set) var preview: CGImage?
     private var previewBusy = false
     private var previewWanted: Double?
+
+    /// The scrub is over: its frame goes, and the engine closes the decoders that made the frames,
+    /// which on a 4K title cost 100 to 160 MB each.
+    private func endPreviews() {
+        preview = nil
+        let engine = engine
+        Task { await engine.releaseScrubPreviewDecoders() }
+    }
 
     /// Asks the engine for a frame at `seconds`; while one is being made, only the latest ask waits.
     private func wantPreview(_ seconds: Double) {
