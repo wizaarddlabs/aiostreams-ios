@@ -183,10 +183,14 @@ struct HomeView: View {
             async let nextResult: ItemsResult = client.get("/Shows/NextUp", ["userId": userId, "Limit": "24", "EnableResumable": "false"])
             async let upcomingResult: ItemsResult = client.get("/Shows/Upcoming", ["userId": userId, "Limit": "24"])
             async let viewsResult: ItemsResult = client.get("/UserViews", ["userId": userId])
-            resume = (try? await resumeResult.items) ?? []
-            nextUp = (try? await nextResult.items) ?? []
+            // Assigning only on change keeps SwiftUI's views (and the focused card) in place on a refresh.
+            let newResume = (try? await resumeResult.items) ?? []
+            if newResume != resume { resume = newResume }
+            let newNextUp = (try? await nextResult.items) ?? []
+            if newNextUp != nextUp { nextUp = newNextUp }
             saveTopShelf(client: client)
-            upcoming = (try? await upcomingResult.items) ?? []
+            let newUpcoming = (try? await upcomingResult.items) ?? []
+            if newUpcoming != upcoming { upcoming = newUpcoming }
             let allViews = try await viewsResult.items ?? []
             let views = allViews.filter(isBrowsable)
             if allViews.contains(where: { $0.collectionType == "livetv" }) {
@@ -211,15 +215,19 @@ struct HomeView: View {
                         return (index, view, result?.items ?? [])
                     }
                 }
+                // First load: rows appear as each arrives. A refresh (e.g. back from playback) waits for
+                // all of them and swaps once, only if something changed, so the focused row isn't rebuilt
+                // and focus doesn't fall back to the top of Home.
+                let refreshing = !libraries.isEmpty
                 for await (index, view, items) in group {
                     heads[index] = (view, items)
-                    libraries = heads.keys.sorted().compactMap { key in
-                        guard let entry = heads[key], !entry.1.isEmpty else { return nil }
-                        return HomeRow(id: entry.0.id, title: entry.0.name ?? L("Library"), items: entry.1, library: entry.0)
-                    }
+                    if !refreshing { libraries = homeRows(heads) }
                 }
             }
-            hero = heroPicks(views: views, heads: heads, client: client)
+            let rows = homeRows(heads)
+            if !sameRows(rows, libraries) { libraries = rows }
+            let picks = heroPicks(views: views, heads: heads, client: client)
+            if hero.isEmpty || picks.map(\.id) != hero.map(\.id) { hero = picks }
         } catch let failure as JellyfinError where failure.status == 401 {
             session.expired()
         } catch {
@@ -249,6 +257,20 @@ struct HomeView: View {
     /// What the web app's Featured on home names (`resume`, `next-up`, `view:<id>`), taking turns;
     /// on Automatic, the Movies and Shows libraries' heads, or the first library's. Only titles with
     /// a backdrop.
+    private func homeRows(_ heads: [Int: (Item, [Item])]) -> [HomeRow] {
+        heads.keys.sorted().compactMap { key in
+            guard let entry = heads[key], !entry.1.isEmpty else { return nil }
+            return HomeRow(id: entry.0.id, title: entry.0.name ?? L("Library"), items: entry.1, library: entry.0)
+        }
+    }
+
+    /// Same rows, titles and titles' ids in the same order: nothing the screen would show differently.
+    private func sameRows(_ a: [HomeRow], _ b: [HomeRow]) -> Bool {
+        a.count == b.count && zip(a, b).allSatisfy { x, y in
+            x.id == y.id && x.title == y.title && x.items.map(\.id) == y.items.map(\.id)
+        }
+    }
+
     private func heroPicks(views: [Item], heads: [Int: (Item, [Item])], client: JellyfinClient) -> [Item] {
         let lists = heads.keys.sorted().compactMap { heads[$0] }
         var sources: [[Item]]
