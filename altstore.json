@@ -23,13 +23,21 @@
       ],
       "versions": [
         {
+          "version": "0.7.1",
+          "date": "2026-11-19T22:02:10Z",
+          "localizedDescription": "Apple TV\r\n- Catch-up from Xtream and similar IPTV providers plays: programmes no longer fail with \"Source origin answers byte ranges with other bytes\". Catch-up programmes now play straight through from the start, and other streams that hit this error retry automatically. Skipping within a catch-up programme isn't possible with these providers.\r\n\r\nBoth apps\r\n- AetherEngine 7.71.0: live channels start faster, recordings in progress are joined from their start, some MP4 files open faster, resuming can reuse what was already downloaded, plus fixes for captions, seeking and 4K on older Apple TVs.\r\n\r\nInstall\r\n- New AltStore source address, which always works, even while a new release is being built:\r\n  https://raw.githubusercontent.com/wizaarddlabs/aiostreams-ios/altstore/altstore.json",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.1/AIOStreams.ipa",
+          "size": 18061832,
+          "minOSVersion": "18.0",
+          "sha256": "8f977f0645ff317a8ae1b2d1336c1a2c89e9f711d36ab8d9a2aca515ecdda5bf"
+        },
+        {
           "version": "0.7.0",
           "date": "2026-11-19T20:32:21Z",
           "localizedDescription": "Apple TV\r\n- Faster playback starts: films and episodes start without waiting for subtitle addons. Addon subtitles load in the background and are added once playback begins, switching on automatically if your subtitle settings choose one.\r\n\r\niPhone and iPad\r\n- Latest web app, as shipped with AIOStreams Android 0.17.0:\r\n  - Faster starts: subtitle addons no longer hold up playback.\r\n  - Pages you go back to stay loaded, so Back is quicker.\r\n  - Settings sections open in a slide-over.\r\n  - A more reliable pause screen.\r\n  - Tidier page layouts.",
           "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.0/AIOStreams.ipa",
           "size": 17940756,
-          "minOSVersion": "18.0",
-          "sha256": "a1f18e1fca1660a52dbd99f7ece07e8a3cd86a91a9e1cbc33305f4448b4a3eee"
+          "minOSVersion": "18.0"
         },
         {
           "version": "0.6.12",
