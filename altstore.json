@@ -23,13 +23,21 @@
       ],
       "versions": [
         {
+          "version": "0.7.5",
+          "date": "2026-11-20T17:11:45Z",
+          "localizedDescription": "Both apps\r\n- AetherEngine 7.71.1: more reliable sound at the start of some titles, faster resuming of certain files, and quicker scrubbing previews.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.5/AIOStreams.ipa",
+          "size": 18069598,
+          "minOSVersion": "18.0",
+          "sha256": "39492df301e269247bfd8b752b639b3281362b821b9ffecf362bf1a87be967e9"
+        },
+        {
           "version": "0.7.4",
           "date": "2026-11-20T15:33:29Z",
           "localizedDescription": "Apple TV\r\n- Live TV no longer disappears: if the server doesn't respond when the app starts, for example while it's restarting after an update, the app now retries instead of hiding Live TV until the app is restarted. It also checks again whenever you return to the app.",
           "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.4/AIOStreams.ipa",
           "size": 18061845,
-          "minOSVersion": "18.0",
-          "sha256": "33be2e57727bb781b977c1c2b01902687148fffa1fbabbe5fb47bce98891b970"
+          "minOSVersion": "18.0"
         },
         {
           "version": "0.7.3",
