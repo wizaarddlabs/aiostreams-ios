@@ -23,13 +23,21 @@
       ],
       "versions": [
         {
+          "version": "0.7.3",
+          "date": "2026-11-20T01:18:10Z",
+          "localizedDescription": "iPhone and iPad\r\n- Home no longer reloads endlessly: fixes Home crashing and reloading over and over right after opening the app on some iPhones. Artwork now loads without the background-sharpening step that triggered it.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.3/AIOStreams.ipa",
+          "size": 18061852,
+          "minOSVersion": "18.0",
+          "sha256": "ef4ce6d3848d99379124dd6fac6af7688cea227abea9ea2cb780b85e84cc318e"
+        },
+        {
           "version": "0.7.2",
           "date": "2026-11-19T23:08:32Z",
           "localizedDescription": "Apple TV\r\n- Audio and subtitle menus work again: opening Audio, Subtitles, Speed, Chapters, Sync or Episodes in the player now puts you straight onto the list, on the option currently in use, so you can pick a track right away.",
           "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.2/AIOStreams.ipa",
           "size": 18061829,
-          "minOSVersion": "18.0",
-          "sha256": "57ea112777a67882099b852ce9cda4ad76e63fd86280d4b3254ba2d0475992bc"
+          "minOSVersion": "18.0"
         },
         {
           "version": "0.7.1",
