@@ -23,13 +23,21 @@
       ],
       "versions": [
         {
+          "version": "0.7.4",
+          "date": "2026-11-20T15:33:29Z",
+          "localizedDescription": "Apple TV\r\n- Live TV no longer disappears: if the server doesn't respond when the app starts, for example while it's restarting after an update, the app now retries instead of hiding Live TV until the app is restarted. It also checks again whenever you return to the app.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.4/AIOStreams.ipa",
+          "size": 18061845,
+          "minOSVersion": "18.0",
+          "sha256": "33be2e57727bb781b977c1c2b01902687148fffa1fbabbe5fb47bce98891b970"
+        },
+        {
           "version": "0.7.3",
           "date": "2026-11-20T01:18:10Z",
           "localizedDescription": "iPhone and iPad\r\n- Home no longer reloads endlessly: fixes Home crashing and reloading over and over right after opening the app on some iPhones. Artwork now loads without the background-sharpening step that triggered it.",
           "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.3/AIOStreams.ipa",
           "size": 18061852,
-          "minOSVersion": "18.0",
-          "sha256": "ef4ce6d3848d99379124dd6fac6af7688cea227abea9ea2cb780b85e84cc318e"
+          "minOSVersion": "18.0"
         },
         {
           "version": "0.7.2",
