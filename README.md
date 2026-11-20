@@ -83,6 +83,29 @@ The IPA is unsigned. Sign it when you install it with AltStore, SideStore, Sidel
 
 To run it from Xcode instead, run `scripts/build-web.sh`, then `xcodegen generate`, open `AIOStreams.xcodeproj`, choose your team under Signing, and run it on a device.
 
+## Install on a device
+
+Requires the Mac build tools above. Sign into Xcode and pair your device under **Window → Devices and Simulators**.
+
+Find your device UDID (`DEVICE`) and Apple team ID (`DEVELOPMENT_TEAM`):
+
+```bash
+scripts/install.sh info
+```
+
+Install on Apple TV, or use `PLATFORM=ios` for iPhone/iPad:
+
+```bash
+PLATFORM=tvos DEVICE="YOUR-DEVICE-UDID" DEVELOPMENT_TEAM=ABCDE12345 \
+  BUNDLE_ID=io.yourname.aiostreams.tv scripts/install.sh install
+```
+
+Choose a unique bundle ID and keep it for updates. To find an installed app’s ID, run `DEVICE="YOUR-DEVICE-UDID" scripts/install.sh info`. If the Apple team ID (`DEVELOPMENT_TEAM`) is missing, check Xcode’s Signing & Capabilities.
+
+The installer builds your local source and sets the app version automatically.
+
+With a free Apple account, reinstall every 7 days. Local installs don’t support Top Shelf (Home screen recommendations).
+
 ## What maps to what
 
 | Page message | iOS app |
