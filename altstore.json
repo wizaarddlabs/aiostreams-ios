@@ -23,13 +23,21 @@
       ],
       "versions": [
         {
+          "version": "0.7.6",
+          "date": "2026-11-20T18:09:33Z",
+          "localizedDescription": "Both apps\r\n- AetherEngine 7.71.2: smoother handling of IPTV streams that send data in tiny pieces, and Dolby Vision is labelled correctly in live recordings.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.6/AIOStreams.ipa",
+          "size": 18069536,
+          "minOSVersion": "18.0",
+          "sha256": "7e30b18be352e8d790abf31be373cc32ed956f4c5f41e654051bbad7399588b2"
+        },
+        {
           "version": "0.7.5",
           "date": "2026-11-20T17:11:45Z",
           "localizedDescription": "Both apps\r\n- AetherEngine 7.71.1: more reliable sound at the start of some titles, faster resuming of certain files, and quicker scrubbing previews.",
           "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.5/AIOStreams.ipa",
           "size": 18069598,
-          "minOSVersion": "18.0",
-          "sha256": "39492df301e269247bfd8b752b639b3281362b821b9ffecf362bf1a87be967e9"
+          "minOSVersion": "18.0"
         },
         {
           "version": "0.7.4",
