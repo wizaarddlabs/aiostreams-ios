@@ -1,0 +1,406 @@
+{
+  "name": "AIOStreams for Apple TV",
+  "identifier": "io.github.aiostreams-ios.tv",
+  "subtitle": "An unofficial Apple TV app for AIOStreams.",
+  "website": "https://github.com/wizaarddlabs/aiostreams-ios",
+  "iconURL": "https://raw.githubusercontent.com/wizaarddlabs/aiostreams-ios/main/AIOStreams/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
+  "tintColor": "6152DF",
+  "apps": [
+    {
+      "name": "AIOStreams",
+      "bundleIdentifier": "io.github.aiostreams-ios.tv",
+      "developerName": "aiostreams-ios",
+      "subtitle": "Your AIOStreams server, played through AetherEngine.",
+      "localizedDescription": "An unofficial native Apple TV app for AIOStreams, built to look and work like the official apps, played through AetherEngine: HDR10, HDR10+, Dolby Vision and Atmos, Live TV with a guide and catch-up, watch parties, Top Shelf and more. Not affiliated with AIOStreams or AetherEngine.",
+      "iconURL": "https://raw.githubusercontent.com/wizaarddlabs/aiostreams-ios/main/AIOStreams/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
+      "tintColor": "6152DF",
+      "category": "entertainment",
+      "screenshots": [
+        "https://raw.githubusercontent.com/wizaarddlabs/aiostreams-ios/main/docs/screenshots/tv-home.jpg",
+        "https://raw.githubusercontent.com/wizaarddlabs/aiostreams-ios/main/docs/screenshots/tv-show.jpg",
+        "https://raw.githubusercontent.com/wizaarddlabs/aiostreams-ios/main/docs/screenshots/tv-movie.jpg",
+        "https://raw.githubusercontent.com/wizaarddlabs/aiostreams-ios/main/docs/screenshots/tv-player.jpg"
+      ],
+      "versions": [
+        {
+          "version": "0.7.7",
+          "date": "2026-11-21T02:33:58Z",
+          "localizedDescription": "Apple TV\r\n- Easier navigation on title pages: pressing up from the cast or seasons rows now reaches Play and the other buttons from anywhere in the row, not only from directly beneath them.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.7/AIOStreams-tvOS.ipa",
+          "size": 12973793,
+          "minOSVersion": "18.0",
+          "sha256": "69d844d14cf53618c8f2f0dc6678dee8fdb43b4aa3ff6f8398b224e4aa9e30fa"
+        },
+        {
+          "version": "0.7.6",
+          "date": "2026-11-20T18:09:33Z",
+          "localizedDescription": "Both apps\r\n- AetherEngine 7.71.2: smoother handling of IPTV streams that send data in tiny pieces, and Dolby Vision is labelled correctly in live recordings.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.6/AIOStreams-tvOS.ipa",
+          "size": 12971616,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.7.5",
+          "date": "2026-11-20T17:11:45Z",
+          "localizedDescription": "Both apps\r\n- AetherEngine 7.71.1: more reliable sound at the start of some titles, faster resuming of certain files, and quicker scrubbing previews.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.5/AIOStreams-tvOS.ipa",
+          "size": 12972479,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.7.4",
+          "date": "2026-11-20T15:33:29Z",
+          "localizedDescription": "Apple TV\r\n- Live TV no longer disappears: if the server doesn't respond when the app starts, for example while it's restarting after an update, the app now retries instead of hiding Live TV until the app is restarted. It also checks again whenever you return to the app.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.4/AIOStreams-tvOS.ipa",
+          "size": 12961837,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.7.3",
+          "date": "2026-11-20T01:18:10Z",
+          "localizedDescription": "iPhone and iPad\r\n- Home no longer reloads endlessly: fixes Home crashing and reloading over and over right after opening the app on some iPhones. Artwork now loads without the background-sharpening step that triggered it.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.3/AIOStreams-tvOS.ipa",
+          "size": 12962175,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.7.2",
+          "date": "2026-11-19T23:08:32Z",
+          "localizedDescription": "Apple TV\r\n- Audio and subtitle menus work again: opening Audio, Subtitles, Speed, Chapters, Sync or Episodes in the player now puts you straight onto the list, on the option currently in use, so you can pick a track right away.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.2/AIOStreams-tvOS.ipa",
+          "size": 12962162,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.7.1",
+          "date": "2026-11-19T22:02:10Z",
+          "localizedDescription": "Apple TV\r\n- Catch-up from Xtream and similar IPTV providers plays: programmes no longer fail with \"Source origin answers byte ranges with other bytes\". Catch-up programmes now play straight through from the start, and other streams that hit this error retry automatically. Skipping within a catch-up programme isn't possible with these providers.\r\n\r\nBoth apps\r\n- AetherEngine 7.71.0: live channels start faster, recordings in progress are joined from their start, some MP4 files open faster, resuming can reuse what was already downloaded, plus fixes for captions, seeking and 4K on older Apple TVs.\r\n\r\nInstall\r\n- New AltStore source address, which always works, even while a new release is being built:\r\n  https://raw.githubusercontent.com/wizaarddlabs/aiostreams-ios/altstore/altstore.json",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.1/AIOStreams-tvOS.ipa",
+          "size": 12955640,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.7.0",
+          "date": "2026-11-19T20:32:21Z",
+          "localizedDescription": "Apple TV\r\n- Faster playback starts: films and episodes start without waiting for subtitle addons. Addon subtitles load in the background and are added once playback begins, switching on automatically if your subtitle settings choose one.\r\n\r\niPhone and iPad\r\n- Latest web app, as shipped with AIOStreams Android 0.17.0:\r\n  - Faster starts: subtitle addons no longer hold up playback.\r\n  - Pages you go back to stay loaded, so Back is quicker.\r\n  - Settings sections open in a slide-over.\r\n  - A more reliable pause screen.\r\n  - Tidier page layouts.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.0/AIOStreams-tvOS.ipa",
+          "size": 12832494,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.6.12",
+          "date": "2026-11-19T17:20:43Z",
+          "localizedDescription": "Apple TV\r\n- Liquid Glass: Settings → Theme → Glass, as in the official AIOStreams apps.\r\n  - Glass surface: choose Solid (as before), Frosted glass, or Liquid glass (tvOS 26) for the sidebar and top bar.\r\n  - Glass panels: put settings, menus, the calendar and other panels on glass too, when Background from artwork is on.\r\n  - Slower Apple TVs may feel the extra drawing.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.6.12/AIOStreams-tvOS.ipa",
+          "size": 12817985,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.6.11",
+          "date": "2026-11-19T14:44:04Z",
+          "localizedDescription": "Apple TV\r\n- Catch-up goes back in time: the Live TV day picker now offers past days as far back as your server keeps programmes (up to a month), not just today and the days ahead.\r\n\r\niPhone and iPad\r\n- Download over cellular: Settings → Downloads now has Only on Wi-Fi. Turn it off to let downloads use cellular data.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.6.11/AIOStreams-tvOS.ipa",
+          "size": 12795178,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.6.10",
+          "date": "2026-11-19T01:32:07Z",
+          "localizedDescription": "Apple TV\r\n- Better IPTV compatibility: live channels now identify themselves to the stream as VLC when the stream doesn't ask for anything else, as the official AIOStreams apps do. Some IPTV providers refuse other players, so channels from those providers should now play.\r\n\r\niPhone and iPad\r\n- Latest web app:\r\n  - Live channels identify themselves as VLC, as on Apple TV.\r\n  - The profile picker now also lists profiles from your other saved servers.\r\n  - Updated translations.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.6.10/AIOStreams-tvOS.ipa",
+          "size": 12788249,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.6.9",
+          "date": "2026-11-19T00:10:55Z",
+          "localizedDescription": "Apple TV\r\n- Catch-up further back: the Live TV guide has a day picker, so you can browse and play catch-up from earlier days, as far back as your server's guide goes. Each day shows in full, and today's guide now covers the whole day.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.6.9/AIOStreams-tvOS.ipa",
+          "size": 12788740,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.6.8",
+          "date": "2026-11-18T22:45:11Z",
+          "localizedDescription": "iPhone and iPad\r\n- Native-feeling back swipe: swiping back from a title now slides the page away to show the previous one underneath, right where you left it, like the Android app. No more white screen while the page reloads. Works from either edge of the screen.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.6.8/AIOStreams-tvOS.ipa",
+          "size": 12770864,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.6.7",
+          "date": "2026-11-18T21:47:42Z",
+          "localizedDescription": "Apple TV\r\n- Less interruption while watching: pausing, resuming and skipping no longer bring up the player controls. A brief icon shows what happened instead: pause, play, or a skip back or forward. The \"Show the controls on pause and skip\" setting has been removed, as in the official AIOStreams apps.\r\n\r\niPhone and iPad\r\n- Latest web app fixes:\r\n  - The player controls stay hidden when you swipe, skip or pause.\r\n  - A top bar you've scrolled away stays hidden while the page keeps scrolling.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.6.7/AIOStreams-tvOS.ipa",
+          "size": 12770862,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.6.6",
+          "date": "2026-11-18T14:21:42Z",
+          "localizedDescription": "Both apps\r\n- Subtitle formatting codes are now fully hidden: codes like {\\an8} no longer show up in subtitles, including in lines with italics, which v0.6.5 missed. Lines that ask to sit at the top now do.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.6.6/AIOStreams-tvOS.ipa",
+          "size": 12766904,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.6.5",
+          "date": "2026-11-18T02:56:20Z",
+          "localizedDescription": "Both apps\r\n- Cleaner subtitles: formatting codes left in some subtitle files, such as {\\an8}, no longer show up as text.\r\n- Lines that ask to sit at the top now do, keeping them clear of on-screen text like captions and news banners.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.6.5/AIOStreams-tvOS.ipa",
+          "size": 12762070,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.6.4",
+          "date": "2026-11-18T01:19:55Z",
+          "localizedDescription": "iPhone and iPad\r\n- Latest web app: updated to the version shipped with AIOStreams Android 0.16.1.\r\n  - Swiping back slides the page the same way from either edge.\r\n  - The artwork background no longer flashes when you go back to a page without it.\r\n  - Remote and keyboard navigation no longer jumps back when leaving a menu.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.6.4/AIOStreams-tvOS.ipa",
+          "size": 12762161,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.6.3",
+          "date": "2026-11-18T00:42:10Z",
+          "localizedDescription": "Apple TV\r\n- Smoother backdrop blur on title pages:\r\n  - The blurred backdrop no longer shows a border at its edges.\r\n  - It now uses the same blur and darkening as the background behind the sidebar, so the two match.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.6.3/AIOStreams-tvOS.ipa",
+          "size": 12762162,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.6.2",
+          "date": "2026-11-17T22:28:16Z",
+          "localizedDescription": "Apple TV\r\n- Clearer title pages: the backdrop now blurs and darkens when you scroll down to the cast, episodes and More like this, so they're easier to read. It turns sharp again when you scroll back to the top.\r\n\r\niPhone and iPad\r\n- Subtitles on trailers and streams (#6):\r\n  - Subtitle types are respected: subtitles now follow your Subtitle types order, so with SDH first, the SDH track is picked.\r\n  - The app's style is used: these subtitles now use the app's subtitle style (size, colour, font, background and outline) instead of the system caption style.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.6.2/AIOStreams-tvOS.ipa",
+          "size": 12762919,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.6.1",
+          "date": "2026-11-17T20:54:24Z",
+          "localizedDescription": "Apple TV\r\n- Settings regrouped: settings now follow the same layout as the latest official AIOStreams apps.\r\n  - Watching: Playback, Player, Audio and Subtitles.\r\n  - Look and feel: Interface, Browsing and Theme.\r\n  - App: Account and About.\r\n- Background from artwork by page: choose where it shows: title pages; Home, search and catalogs; and other pages. By default it shows behind title pages only. Synced with the web app and the other official apps.\r\n- New Live TV setting: show Live TV on Home and in the navigation, in the navigation only, or hide it. Hiding it also removes channels from search. Synced with the web app and the other official apps.\r\n\r\niPhone and iPad\r\n- Latest web app: updated to the version shipped with AIOStreams Android 0.16.0 and Desktop 0.26.0.\r\n  - Regrouped settings with a search.\r\n  - The new Live TV and Background from artwork settings.\r\n  - A switch for each player gesture.\r\n  - Card previews in search results.\r\n  - OK brings up the controls during live streams.\r\n  - Updated translations.\r\n- Subtitles on trailers and streams (#6):\r\n  - With subtitles set to Always, they now turn on in your language automatically.\r\n  - They use the app's subtitle style instead of the system caption style.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.6.1/AIOStreams-tvOS.ipa",
+          "size": 12758444,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.6.0",
+          "date": "2026-11-17T18:25:39Z",
+          "localizedDescription": "Apple TV\r\n- Redesigned Calendar: the Calendar now shows a whole month, like the official AIOStreams app.\r\n  - Use the arrows to move between months; Today brings you back to this month.\r\n  - Each day shows artwork from what airs that day, today's date is highlighted, and up to two shows are listed with their episode and air time, plus how many more.\r\n  - Shows you've watched are greyed out, and days outside the month are dimmed.\r\n  - Select a day to see everything airing on it, then choose one to open its page.\r\n  - Episodes without an air time now show on the right day.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.6.0/AIOStreams-tvOS.ipa",
+          "size": 12725404,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.5.9",
+          "date": "2026-11-17T17:16:29Z",
+          "localizedDescription": "Both apps\r\n- AetherEngine 7.70.0: a big round of fixes inside the player.\r\n  - Leaving the app, phone calls and other interruptions are handled more reliably, and playback no longer keeps running in the background longer than iOS allows after one.\r\n  - More reliable streaming: the player copes better with unusual server responses and redirects, and retries video pieces that fail to download.\r\n  - Cleaner handling of audio switching and sound adjustments such as dialogue boost and night mode.\r\n  - Logs no longer include tokens, cookies or passwords, so problem reports stay private.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.5.9/AIOStreams-tvOS.ipa",
+          "size": 12673023,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.5.8",
+          "date": "2026-11-17T11:22:22Z",
+          "localizedDescription": "Apple TV\r\n- HDR10 tone mapping: a new setting under Settings → Playback → Video, off by default.\r\n  - Pick your TV's peak brightness, and HDR10 brighter than that is toned down so highlights keep their detail.\r\n  - Needs tvOS 26. Titles it adjusts have no Picture in Picture, and Atmos in Dolby Digital Plus plays without its height channels.\r\n- More reliable Live TV:\r\n  - A channel that loads but doesn't start is paused and played once automatically.\r\n  - A channel whose sound can't be read is reloaded through Apple's own player.\r\n- Guide: \"No guide for this channel\" now stays next to the channel names as you scroll.\r\n- About: shows Source code and Documentation links, each with a QR code to scan with your phone.\r\n- Donate: a new Donate button under the settings sections shows the AIOStreams developer's GitHub Sponsors and Ko-fi as QR codes.\r\n\r\nBoth apps\r\n- AetherEngine 7.69.1:\r\n  - Live channels start sooner.\r\n  - Live channels stay live after you switch audio tracks.\r\n  - On iPhone and iPad, a video's sound keeps playing in the background.\r\n  - Fixes Atmos output between streams and playback of DASH sources.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.5.8/AIOStreams-tvOS.ipa",
+          "size": 12617375,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.5.7",
+          "date": "2026-11-16T19:09:06Z",
+          "localizedDescription": "iPhone and iPad\r\n- Trailers use your subtitle settings: when you open a trailer that's playing behind the Home banner or on a title's page, its subtitles now follow your subtitle mode and languages, as the trailer page's do (#6). While the trailer plays in the background, subtitles stay hidden as before.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.5.7/AIOStreams-tvOS.ipa",
+          "size": 12580685,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.5.6",
+          "date": "2026-11-16T15:20:19Z",
+          "localizedDescription": "iPhone and iPad\r\n- Background trailers show their picture: trailers that play behind the Home banner and on a title's page now show their video, not just their sound (#6).\r\n\r\nBoth apps\r\n- AetherEngine 7.69.0:\r\n  - 4K HEVC with a 2176-line picture now shows at the correct 2160 on Apple TV.\r\n  - A live channel keeps playing when its audio switches layout, for example from stereo to 5.1.\r\n  - MPEG-DASH sources start sooner.\r\n  - Seek-bar thumbnails load ahead of where you are.\r\n  - Upscaling runs faster.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.5.6/AIOStreams-tvOS.ipa",
+          "size": 12580687,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.5.5",
+          "date": "2026-11-15T20:54:38Z",
+          "localizedDescription": "Apple TV\r\n- Redesigned settings: settings now look like the official AIOStreams app.\r\n  - The sections are listed down the left side in two groups: Watching (Playback, Audio, Subtitles) and App (Interface, Theme, Account, About). Moving onto a section opens it.\r\n  - Each section has a header with its icon and a short description. Its settings sit in dark rounded cards, with each setting's help text right under it.\r\n  - Every setting works as before; some have moved to the section they fit best:\r\n    - Playback: skipping and the next episode, player controls, Live TV and Video.\r\n    - Audio: sound, and Atmos and DTS:X.\r\n    - Subtitles: subtitle style.\r\n    - Interface: language.\r\n- Profile button: the profile button in the navigation now opens your Account settings.\r\n\r\niPhone and iPad\r\n- Downloads survive leaving the app: leaving the app right after tapping Download no longer fails with \"Could not find versions: Can't reach the server\". The app now asks iOS for extra time to finish finding the version. If that's still cut short, it tries again when you come back instead of failing. Once found, the download carries on in the background as before.\r\n  - Swiping the app away (force-quitting) still stops downloads until you open it again. That's an iOS rule for every app.\r\n  - A download that already failed this way needs one tap on its retry button.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.5.5/AIOStreams-tvOS.ipa",
+          "size": 12504153,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.5.4",
+          "date": "2026-11-15T18:11:45Z",
+          "localizedDescription": "Apple TV\r\n- Home keeps your place: coming back from the player now returns you to the card you were on, instead of jumping to the top of Home. Thanks to lgalway89 (#3).\r\n- Home stays up to date: rows update when a title's progress or watched mark changes, so a film you finish shows as watched.\r\n\r\nBoth apps\r\n- AetherEngine 7.68.0:\r\n  - Dolby Vision Profile 20 (MV-HEVC) plays, in 2D or in 3D where the device supports it.\r\n  - TV display mode switches finish sooner.\r\n  - Interlaced H.264 shows a steady picture on AirPlay receivers.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.5.4/AIOStreams-tvOS.ipa",
+          "size": 12428843,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.5.3",
+          "date": "2026-11-15T16:56:07Z",
+          "localizedDescription": "Apple TV\r\n- Live TV channels play again: starting a channel uses the same requests as v0.5.1. In v0.5.2, channels could get stuck on a flickering loading icon.\r\n- Guide: programmes no longer draw underneath the channel list when you scroll right.\r\n- Top bar look: the art on Home and title pages now runs up under the bar, so the coloured strip and grey line below it are gone.\r\n- Top bar layout: the tabs are centred between the AIOStreams logo and the settings and profile buttons.\r\n- Edge padding: in top bar mode, pages sit further in from the left edge of the screen, lined up with the logo, so posters, rows and cast no longer touch it.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.5.3/AIOStreams-tvOS.ipa",
+          "size": 12380477,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.5.2",
+          "date": "2026-11-15T15:44:52Z",
+          "localizedDescription": "Apple TV\r\n- Top bar fixed: pressing down from the top bar now moves into the page again.\r\n- Smaller top bar: it fits the screen and no longer pushes pages, the logo or the account button off the edges. When there isn't room for every tab's name, only the tab you're on is named.\r\n- Faster Live TV guide: it scrolls smoothly up, down, left and right with large channel lists. It only builds the rows on screen, and more channels load as you scroll down.\r\n- Channel column back: the channel names down the side of the guide show again.\r\n- Quicker channel start: channels ask the server for less before they start, the way the web app does.\r\n- New Live TV settings: *Match frame rate* and *Match dynamic range*, each on its own. Turning them off keeps the TV in its current mode, so channels start sooner without the black screen of a mode change. Both need the Apple TV's own Match Content setting turned on to work.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.5.2/AIOStreams-tvOS.ipa",
+          "size": 12381342,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.5.1",
+          "date": "2026-11-15T13:29:37Z",
+          "localizedDescription": "Apple TV\r\n\r\nWatch together\r\n\r\nWatch with friends, each on their own device. When anyone plays, pauses or skips, it happens for everyone.\r\n\r\n- Start a party from Watch together in the sidebar. You get a code (like ABCDE-12345) for others to join with.\r\n- Join a party by typing its code.\r\n- Works with the AIOStreams web app, so friends can join from their phone, computer or TV.\r\n- Each person watches their own copy from their own server, in the version closest to the host's. Everyone stays in step, and the party waits while anyone is still loading.\r\n- See who's in the party, what's playing and the chat. Send messages and reactions, and see others' as they happen.\r\n- Playing a title while you're in a party starts it for everyone.\r\n- Leaving the player lets you sit a title out while staying in the party. Back to the party takes you back to it.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.5.1/AIOStreams-tvOS.ipa",
+          "size": 12337495,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.5.0",
+          "date": "2026-11-15T12:55:00Z",
+          "localizedDescription": "Both apps\r\n- Arabic and Romanian, now that the official app has them. On Apple TV, the layout flips for Arabic, which reads right to left.\r\n- Update notice: the apps now tell you when a newer version is out, since sideloaded copies don't update themselves. On iPhone and iPad you get a one-time alert for each new version; on Apple TV it shows in Settings → About.\r\n- Based on AIOStreams v2.38.1.\r\n\r\niPhone & iPad\r\n- Stats over the video: turn on stats in the player to see the codec, resolution, format, bitrate, decoders and how much is buffered.\r\n- Swipes on the video: swipe up and down to change the volume and the screen brightness, like the Android app.\r\n\r\nApple TV\r\n\r\nHome\r\n- Top Shelf: with the app in the top row, the Apple TV home screen shows your Continue watching and Next up. Select a title to open it, or press Play to start it straight away.\r\n- Featured on home: the hero banner now follows the web app's Featured on home setting, which you can also change in Settings → Interface.\r\n- Playlists: a new Playlists page, with Play and Shuffle for each playlist. Hold Select on a title and choose Add to playlist. Titles played from a playlist play on through the rest of it.\r\n\r\nPlayer\r\n- Picture in Picture: keep watching in a corner while you browse.\r\n- Stats: a button in the player shows what's playing and how.\r\n- Held speed: hold Select on the video to play faster (1.5×, 2× or 3×), then let go to return to normal.\r\n- Channel surfing: press up or down while watching a channel to change channel.\r\n- Remote control: control the Apple TV from the AIOStreams web app's remote, or any Jellyfin app's. Open or play titles, pause, seek, skip, and change audio or subtitles.\r\n- Find versions when a title opens: an optional setting that starts looking for versions as soon as you open a title, so Play starts sooner.\r\n- Seek bar previews can now be turned off.\r\n\r\nAudio & subtitles\r\n- Audio and subtitles are now chosen the same way as in the web app, including your preferred audio and subtitle types (such as commentary, SDH or forced).\r\n- Remember picks per show: an audio track or subtitle you pick sticks for the rest of the show, and carries over between your devices.\r\n- List only my languages: keeps the subtitle list short, with everything else under More languages.\r\n- New Sound settings: channels (for example, stereo only), dialogue boost, night mode and a default audio delay.\r\n- Subtitle outline and background colours.\r\n\r\nLive TV\r\n- Reminders: select a programme that hasn't started yet in the guide, and the app asks if you want to watch it when it begins.\r\n\r\nSettings\r\n- Navigation: choose a top tab bar instead of the sidebar.\r\n- Ask who's watching: shows the profile picker when the app opens, and after half an hour away. Whoever was watching carries on without signing in again.\r\n- Report a problem: sends the app's log to your server, so whoever runs it can see what went wrong.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.5.0/AIOStreams-tvOS.ipa",
+          "size": 12137526,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.4.1",
+          "date": "2026-11-14T23:43:46Z",
+          "localizedDescription": "iPhone Duo\r\n\r\nThe app now fits around the Duo's status bar down the side of the screen, when it's closed or open in landscape:\r\n\r\n- Nothing sits under the clock any more. Pages, the player's controls, the version list and other full-screen sheets now stay clear of the status bar column. Before, buttons such as Home's Activity and Calendar, the version list's Details and close buttons, and the end of each row could end up behind it.\r\n- The bottom bar moves into that column as a vertical bar of icons, like other Duo apps, and the page gets back the space the bar used to take at the bottom.\r\n- The featured banner's artwork still runs to the edge under the column, so there's no dark strip down the side.\r\n\r\nOpen in portrait, with the status bar across the top, the app looks as before, with the bar at the bottom.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.4.1/AIOStreams-tvOS.ipa",
+          "size": 11530050,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.4.0",
+          "date": "2026-11-14T23:17:08Z",
+          "localizedDescription": "Translations\r\n\r\nBoth apps now speak the same languages as the official AIOStreams app: German, Greek, Spanish, French, Indonesian, Italian, Malay, Polish, Portuguese (Brazil), Portuguese, Turkish and Simplified Chinese.\r\n\r\niPhone & iPad\r\n- The app follows your device's language automatically. Before, it always showed English unless you picked a language in Settings.\r\n- Picking a language in the app's Settings still works as before.\r\n- The app's own alerts and permission prompts are translated too.\r\n\r\nApple TV\r\n- The whole interface is translated: Home, browsing, title pages, Live TV, the player, sign-in and Settings.\r\n- New Settings → Language section with App language and Time format.\r\n- App language is the same setting as in the web app, so choosing a language on one device changes it on your others. Automatic follows your Apple TV's language, and a change applies straight away.\r\n- Dates, times, and the names of audio and subtitle languages follow your chosen language.\r\n- Most of the text uses the official app's own translations. The rest is new, so if something reads oddly in your language, please open an issue.\r\n\r\nTitles, synopses and version names stay in the language your server sends.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.4.0/AIOStreams-tvOS.ipa",
+          "size": 11530048,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.3.9",
+          "date": "2026-11-14T21:57:55Z",
+          "localizedDescription": "Player (iPhone, iPad & Apple TV)\r\n\r\nUpdated AetherEngine to 7.67.1:\r\n- Dolby Vision fix: some Dolby Vision files with an enhancement layer (Profile 7 FEL), such as cut-down copies, could crash the player when starting. They now play normally.\r\n- Audio track fix: picking an audio track while a Dolby Vision or HDR title was still loading could drop it to plain HDR10 with no Dolby Vision. The title now keeps its picture format.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.3.9/AIOStreams-tvOS.ipa",
+          "size": 11351708,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.3.8",
+          "date": "2026-11-14T21:37:38Z",
+          "localizedDescription": "Apple TV\r\n\r\nCard previews with trailers\r\n- Rest on a poster in a row for a moment and it opens into a wide card with the title's artwork, logo, year, rating and genres. A moment later the trailer starts playing in it, like on the official TV apps.\r\n- New settings in Settings → Interface: Card previews, Trailers in card previews and Trailer sound. All three are on by default and are saved on each Apple TV separately.\r\n\r\nBackground from artwork\r\n- It now works across the whole app, not just on title pages. The background follows the hero banner on Home, the title page you're on and the version list, and fades from one title's art to the next.\r\n- The sidebar no longer covers the art with a grey band. Like the official app, its icons sit straight on the artwork, and rows fade out just before them as you scroll.\r\n\r\nBackground colours\r\n- Slate and Navy looked the same on a TV. The choices are now Black, Charcoal, Slate (blue-grey), Navy, Plum, Forest and Maroon, and each is clearly different.\r\n\r\nHero banner\r\n- You can now reach More info. Press right from Play to land on More info, and right again to move to the next banner.\r\n- The banner no longer jumps back to the one before after you move to the next.\r\n\r\niPhone & iPad\r\n\r\nShare diagnostics\r\n- New Settings → iOS app tab. Open shares the app's diagnostics from the share sheet, including the device, screen layout, player state and recent log, which makes problem reports much easier.\r\n\r\niPhone Duo\r\n- The app now has a second way to find the Duo's side status bar: from the screen's side margins. The diagnostics now also record how the page was laid out, so if it's still off, a shared report will show why.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.3.8/AIOStreams-tvOS.ipa",
+          "size": 11349424,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.3.7",
+          "date": "2026-11-14T18:19:00Z",
+          "localizedDescription": "Apple TV\r\n\r\nNew\r\n- Catch-up TV. The guide reaches two hours back and opens at the current time. Earlier programmes your channel keeps are marked ↺ and play from the start.\r\n- Chapters with pictures. The chapters panel shows a picture for each chapter, and uses your server's chapters when the file has none.\r\n- Sorts and filters. Filter libraries to Unwatched, and on a plain Jellyfin server also by In progress, Watched or Favourites, sorting by name, date added, release date, rating or runtime. Favourites sort by date added, name, release date or rating.\r\n- Background from artwork (Settings → Theme): a title's art, blurred and darkened, behind its page. Synced with the web app.\r\n- Approve Quick Connect codes from Settings → Account, to sign another device in to your account.\r\n- Channels in search. Search finds Live TV channels too, and plays them live.\r\n\r\nImproved\r\n- Every version listed. Version lists show all versions, past the server's limit (needs AIOStreams v2.38).\r\n- Resuming finds your version by its release even when its ID has changed.\r\n- Live TV starts channels with subtitles off, and remembers the audio and subtitle languages you pick on each one.\r\n- Scrub previews fall back to your server's trickplay thumbnails where the stream can't provide frames.\r\n- Progress for titles without a known runtime: playback reports now include the video's length.\r\n\r\nDownloads\r\n- AIOStreams-tvOS.ipa: Apple TV\r\n- AIOStreams.ipa: iPhone and iPad (unchanged)\r\n- altstore.json: the AltStore and SideStore source\r\n\r\nThe IPAs are unsigned; sign them when you install. As with every public release, these builds leave out TrueHD Atmos and DTS:X height channels.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.3.7/AIOStreams-tvOS.ipa",
+          "size": 11301679,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.3.6",
+          "date": "2026-11-14T17:17:20Z",
+          "localizedDescription": "iPhone and iPad\r\n\r\nNew\r\n- iPhone Duo and iPad multitasking. The app now resizes and fills the screen: the Duo's outer and inner displays in any orientation, Split View on the Duo, and Split View and Slide Over on iPad. It's built with Xcode 27.2 for the Duo's full inner display.\r\n- iPhone Duo's status column. Where the status bar runs down the side (folded, and unfolded sideways), the app draws under it and docks its navigation there as a vertical bar, the way other Duo apps do. Unfolded upright, it keeps the bar at the bottom.\r\n- Updated to AIOStreams Android v0.15.0's web app. Brings an artwork background, sorts and filters for libraries and favourites, the server's chapters and trickplay thumbnails in the player, Quick Connect approval from Account settings, a single version playing without the list, and a fix for the next-episode prompt.\r\n\r\nImproved\r\n- The player turns to landscape only when the app has the whole screen.\r\n\r\nApple TV\r\n\r\nImproved\r\n- Anime detection also uses an Anime genre or tag, for anime upscaling.\r\n- A title's only version plays straight away, without the version list. \"Choose a version\" still shows it.\r\n- Merged Continue watching sorts by the later of your last watch and the next episode's airing.\r\n\r\nFixed\r\n- Next-episode card: a newly started episode could briefly flash the next-episode card from the one before it. The card now waits until the episode is playing, and plays on only once.\r\n\r\nBoth\r\n\r\nImproved\r\n- AetherEngine 7.67.0:\r\n  - Scrubbing 4K uses far less memory (it could reach about 1.1 GB on Apple TV).\r\n  - Dolby Vision FEL no longer freezes on the A12 Apple TV 4K.\r\n  - A live channel's timestamp glitch no longer mutes it.\r\n  - HDR10 on the software path reaches the TV with its mastering metadata.\r\n\r\nDownloads\r\n- AIOStreams-tvOS.ipa: Apple TV\r\n- AIOStreams.ipa: iPhone and iPad\r\n- altstore.json: the AltStore and SideStore source\r\n\r\nThe IPAs are unsigned; sign them when you install. As with every public release, these builds leave out TrueHD Atmos and DTS:X height channels.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.3.6/AIOStreams-tvOS.ipa",
+          "size": 11208967,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.3.5",
+          "date": "2026-11-14T02:58:12Z",
+          "localizedDescription": "Apple TV\r\n\r\nImproved\r\n- Audio button in the player. Audio tracks now have their own button and panel instead of sitting below the subtitles. Each track shows its format and channels (for example \"TrueHD · Atmos · 7.1\" or \"DD+ · 5.1\"), and commentary or audio description tracks are marked.\r\n\r\nDownloads\r\n- AIOStreams-tvOS.ipa: Apple TV\r\n- AIOStreams.ipa: iPhone and iPad (unchanged)\r\n- altstore.json: the AltStore and SideStore source\r\n\r\nThe IPAs are unsigned; sign them when you install. As with every public release, these builds leave out TrueHD Atmos and DTS:X height channels.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.3.5/AIOStreams-tvOS.ipa",
+          "size": 11242745,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.3.4",
+          "date": "2026-11-14T01:56:01Z",
+          "localizedDescription": "iPhone and iPad\r\n\r\nNew\r\n- Mini player. Go back from the player and the video keeps playing in a small player over the app while you browse. Tap it to go back to full screen, or drag it to another corner. Picture in Picture still works from it.\r\n\r\nApple TV\r\n\r\nNew settings\r\nThese sync with the web app unless noted.\r\n\r\n- Hero: rotate through featured titles, or follow the selected card, with the hero pinned at the top while rows scroll beneath (also in a compact size).\r\n- Poster size (small, medium, large) and poster text (title, year, both or none).\r\n- Combine movie and show results in search. Off by default, as in the web app: search now shows Movies and Shows separately.\r\n- Blur episodes not started. Hides the picture and name of unwatched episodes until you select them.\r\n- Theme: accent and background colours.\r\n- Skip by the file's chapters. Chapters named Opening, End Credits, Previously on and so on are used for skipping.\r\n- Skip filler and recap episodes when playing on, where your server marks them.\r\n- Wait for episodes to air before playing on to them.\r\n- Player controls (kept on this Apple TV): skip step (5 to 30 seconds), show the time left, show the clock, and show the controls on pause and skip.\r\n\r\nDownloads\r\n- AIOStreams-tvOS.ipa: Apple TV\r\n- AIOStreams.ipa: iPhone and iPad\r\n- altstore.json: the AltStore and SideStore source\r\n\r\nThe IPAs are unsigned; sign them when you install. As with every public release, these builds leave out TrueHD Atmos and DTS:X height channels.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.3.4/AIOStreams-tvOS.ipa",
+          "size": 11241600,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.3.3",
+          "date": "2026-11-14T00:59:39Z",
+          "localizedDescription": "New\r\n- AltStore and SideStore source. Add this source to install the iPhone and iPad app and get updates in AltStore or SideStore:\r\n\r\n  https://github.com/wizaarddlabs/aiostreams-ios/releases/latest/download/altstore.json\r\n\r\n  It lists every release from v0.2.10 on. Apple TV isn't included, as neither app installs on tvOS.\r\n\r\nThe apps are otherwise the same as v0.3.2.\r\n\r\nDownloads\r\n- AIOStreams-tvOS.ipa: Apple TV\r\n- AIOStreams.ipa: iPhone and iPad\r\n- altstore.json: the AltStore and SideStore source\r\n\r\nThe IPAs are unsigned; sign them when you install. As with every public release, these builds leave out TrueHD Atmos and DTS:X height channels.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.3.3/AIOStreams-tvOS.ipa",
+          "size": 11179629,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.3.2",
+          "date": "2026-11-13T23:44:39Z",
+          "localizedDescription": "iPhone and iPad\r\n\r\nNew\r\n- Downloads. The Download buttons and Downloads page now work. Downloads continue with the app closed, resume where they stopped, bring their subtitles along, and play offline.\r\n- Subtitle sync tools work with the file's own subtitles. The app reads every subtitle line from MKV and MP4 files up front, so the web app's subtitle sync can line up an added subtitle against the whole file.\r\n\r\nApple TV\r\n\r\nNew\r\n- Cast pages. Select anyone in a title's cast to see their photo, birth date, bio, and their movies and shows on your server.\r\n- Episodes panel. A new player button lists the season and switches to another episode without leaving the player.\r\n- Subtitle and audio sync. A new player button shifts subtitles (0.1 s steps) and audio (0.05 s steps) earlier or later, with a reset.\r\n- Pause screen. When paused, the player shows the title's overview.\r\n\r\nBoth\r\n\r\nImproved\r\n- AetherEngine 7.66.1. DTS:X keeps its height channels on 5.1.2, 5.1.4 and 7.1.2 layouts (height-channel builds only).\r\n\r\nThanks\r\nDownloads and the subtitle index are ported from the 9pbpsvr6f9-alt/aiostreams-ios fork.\r\n\r\nDownloads\r\n- AIOStreams-tvOS.ipa: Apple TV\r\n- AIOStreams.ipa: iPhone and iPad\r\n\r\nBoth are unsigned; sign them when you install. As with every public release, these builds leave out TrueHD Atmos and DTS:X height channels.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.3.2/AIOStreams-tvOS.ipa",
+          "size": 11179625,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.3.1",
+          "date": "2026-11-13T21:35:13Z",
+          "localizedDescription": "Apple TV\r\n\r\nNew\r\n- Upcoming row on Home. The next episodes of shows you follow that haven't aired yet, with the air day and how long until it. Selecting one opens its show.\r\n- Live TV row on Home. On a server with Live TV: your favourite channels, then ones you've watched lately, with what's on now. Selecting one plays it live, and All channels opens Live TV.\r\n\r\nDownloads\r\n- AIOStreams-tvOS.ipa: Apple TV\r\n- AIOStreams.ipa: iPhone and iPad (unchanged)\r\n\r\nBoth are unsigned; sign them when you install. As with every public release, these builds leave out TrueHD Atmos and DTS:X height channels.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.3.1/AIOStreams-tvOS.ipa",
+          "size": 11130943,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.3.0",
+          "date": "2026-11-13T17:14:42Z",
+          "localizedDescription": "iPhone and iPad\r\n\r\nNew\r\n- Trailers. The Trailer button on title pages plays the trailer, looked up from YouTube the same way the Android and desktop apps do, in its original language where your audio language is set to Original.\r\n- Picture in Picture. The player has a Picture in Picture button, and leaving the app while a video plays moves it to a floating window if iOS's Start PiP Automatically is on. Subtitles keep your chosen style in the window, and closing the window with its own button pauses playback.\r\n- Launch logo. The app opens on the AIOStreams logo instead of a blank screen, then fades into the web app.\r\n\r\nApple TV\r\n\r\nNew\r\n- Trailers. Title pages with a trailer get a Trailer button. Watching a trailer doesn't change your progress on the title.\r\n\r\nImproved\r\n- Scrub previews only show a picture where the stream supports it, and otherwise show the time alone.\r\n\r\nBoth\r\n\r\nFixed\r\n- Release builds always carry their release's version, even when two releases share a commit.\r\n\r\nThanks\r\nTrailers, Picture in Picture and the launch logo are ported from the 9pbpsvr6f9-alt/aiostreams-ios fork.\r\n\r\nDownloads\r\n- AIOStreams-tvOS.ipa: Apple TV\r\n- AIOStreams.ipa: iPhone and iPad\r\n\r\nBoth are unsigned; sign them when you install. As with every public release, these builds leave out TrueHD Atmos and DTS:X height channels.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.3.0/AIOStreams-tvOS.ipa",
+          "size": 11093046,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.2.12",
+          "date": "2026-11-13T16:05:34Z",
+          "localizedDescription": "iPhone and iPad\r\n\r\nNew\r\n- Trailers. The Trailer button on title pages plays the trailer, looked up from YouTube the same way the Android and desktop apps do, in its original language where your audio language is set to Original.\r\n- Picture in Picture. The player has a Picture in Picture button, and leaving the app while a video plays moves it to a floating window if iOS's Start PiP Automatically is on. Subtitles keep your chosen style in the window, and closing the window with its own button pauses playback.\r\n- Launch logo. The app opens on the AIOStreams logo instead of a blank screen, then fades into the web app.\r\n\r\nApple TV\r\n\r\nNew\r\n- Trailers. Title pages with a trailer get a Trailer button. Watching a trailer doesn't change your progress on the title.\r\n\r\nImproved\r\n- Scrub previews only show a picture where the stream supports it, and otherwise show the time alone.\r\n\r\nThanks\r\nTrailers, Picture in Picture and the launch logo are ported from the 9pbpsvr6f9-alt/aiostreams-ios fork.\r\n\r\nDownloads\r\n- AIOStreams-tvOS.ipa: Apple TV\r\n- AIOStreams.ipa: iPhone and iPad\r\n\r\nBoth are unsigned; sign them when you install. As with every public release, these builds leave out TrueHD Atmos and DTS:X height channels.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.2.12/AIOStreams-tvOS.ipa",
+          "size": 11093052,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.2.11",
+          "date": "2026-11-13T14:58:52Z",
+          "localizedDescription": "Apple TV\r\n\r\nNew\r\n- Scrub previews. Holding left or right, or swiping while paused, shows a frame from where you'd land above the progress bar, with the time and speed.\r\n- Merge continue watching and next up. One row for both, one card per show, most recently watched first (Settings → Interface). Synced with the web app.\r\n\r\nFixed\r\n- Subtitle sizes match the other apps. Every size, Small included, was about a fifth larger than in the web and Android apps. This also applies to iPhone and iPad.\r\n- The speed badge no longer pushes the progress bar up when scrubbing.\r\n- The open sidebar is readable. The page's text no longer shows through the sidebar's names.\r\n- Clearer sidebar focus. Where the remote is now shows the purple focus ring, so it's easy to tell apart from the page you're on.\r\n- One highlighted sidebar entry. Choosing You no longer highlights Settings as well.\r\n\r\niPhone and iPad\r\n\r\nFixed\r\n- Subtitle sizes match the other apps. Every size was about a fifth larger than in the web and Android apps.\r\n\r\nDownloads\r\n- AIOStreams-tvOS.ipa: Apple TV\r\n- AIOStreams.ipa: iPhone and iPad\r\n\r\nBoth are unsigned; sign them when you install. As with every public release, these builds leave out TrueHD Atmos and DTS:X height channels.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.2.11/AIOStreams-tvOS.ipa",
+          "size": 11052524,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.2.10",
+          "date": "2026-11-13T13:12:45Z",
+          "localizedDescription": "Both apps\r\n\r\nImproved\r\n- AetherEngine 7.66.0 (from 7.64.0):\r\n  - Playback recovers when the HDMI link drops while the TV switches display mode, instead of hanging.\r\n  - HLS links that look like .mp4 files (common for IPTV VOD) play.\r\n  - AAC with unusual channel layouts plays, and more PCM audio formats and MPEG-1 Layer I play with sound.\r\n  - Some M2TS files with HEVC video no longer break mid-playback.\r\n  - Image (PGS) subtitles no longer reappear after seeking back.\r\n\r\nDownloads\r\n- AIOStreams-tvOS.ipa: Apple TV\r\n- AIOStreams.ipa: iPhone and iPad\r\n\r\nBoth are unsigned; sign them when you install. As with every public release, these builds leave out TrueHD Atmos and DTS:X height channels.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.2.10/AIOStreams-tvOS.ipa",
+          "size": 11012925,
+          "minOSVersion": "18.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.security.application-groups"
+        ],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "AIOStreams connects to your server and streams on your local network."
+        }
+      }
+    }
+  ],
+  "news": []
+}
