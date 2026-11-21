@@ -23,13 +23,21 @@
       ],
       "versions": [
         {
+          "version": "0.7.8",
+          "date": "2026-11-21T20:10:59Z",
+          "localizedDescription": "Apple TV\r\n- ATVLoadly and FlareStore source: add https://raw.githubusercontent.com/wizaarddlabs/aiostreams-ios/altstore/altstore-tvos.json to install the Apple TV app and get updates automatically.\r\n\r\niPhone and iPad\r\n- Latest web app, as shipped with AIOStreams Android 0.18.0:\r\n  - Press P on an iPad keyboard to toggle Picture in Picture.\r\n  - Touching the screen no longer wakes hidden player controls.\r\n  - Smaller layout and subtitle fixes.\r\n  - Ready for the new collection pages, which need an AIOStreams server update.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.8/AIOStreams-tvOS.ipa",
+          "size": 12973803,
+          "minOSVersion": "18.0",
+          "sha256": "0ff2cf159766899d866dafc85b2aec8bb5b3e9e13c79ea646a76c6dd60f03760"
+        },
+        {
           "version": "0.7.7",
           "date": "2026-11-21T02:33:58Z",
           "localizedDescription": "Apple TV\r\n- Easier navigation on title pages: pressing up from the cast or seasons rows now reaches Play and the other buttons from anywhere in the row, not only from directly beneath them.",
           "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.7/AIOStreams-tvOS.ipa",
           "size": 12973793,
-          "minOSVersion": "18.0",
-          "sha256": "69d844d14cf53618c8f2f0dc6678dee8fdb43b4aa3ff6f8398b224e4aa9e30fa"
+          "minOSVersion": "18.0"
         },
         {
           "version": "0.7.6",
