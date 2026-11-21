@@ -23,13 +23,21 @@
       ],
       "versions": [
         {
+          "version": "0.7.9",
+          "date": "2026-11-21T22:02:56Z",
+          "localizedDescription": "Both apps\r\n- AetherEngine 7.72.0:\r\n  - Live channels switch audio without restarting.\r\n  - Old NTSC film releases play at their original frame rate for smoother motion.\r\n  - Better deinterlacing.\r\n  - HDR video that isn't labelled is now shown in HDR.\r\n  - Dolby Digital audio no longer plays too quietly.\r\n  - Subtitles reappear correctly after rewinding.\r\n- Fixed signing failures in FlareStore and other zsign-based sideloading tools (\"Can't parse BundleExecute file\").",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.9/AIOStreams.ipa",
+          "size": 18150310,
+          "minOSVersion": "18.0",
+          "sha256": "7b8dc7de974e1e9df6f689f47f65ca32e25c5e5f0647e21f77b3c85bbe345791"
+        },
+        {
           "version": "0.7.8",
           "date": "2026-11-21T20:10:59Z",
           "localizedDescription": "Apple TV\r\n- ATVLoadly and FlareStore source: add https://raw.githubusercontent.com/wizaarddlabs/aiostreams-ios/altstore/altstore-tvos.json to install the Apple TV app and get updates automatically.\r\n\r\niPhone and iPad\r\n- Latest web app, as shipped with AIOStreams Android 0.18.0:\r\n  - Press P on an iPad keyboard to toggle Picture in Picture.\r\n  - Touching the screen no longer wakes hidden player controls.\r\n  - Smaller layout and subtitle fixes.\r\n  - Ready for the new collection pages, which need an AIOStreams server update.",
           "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.8/AIOStreams.ipa",
           "size": 18101274,
-          "minOSVersion": "18.0",
-          "sha256": "643d9d7efe45d202ef48fa41750768db99944fe19c517b5b7f98f04993a03a51"
+          "minOSVersion": "18.0"
         },
         {
           "version": "0.7.7",
