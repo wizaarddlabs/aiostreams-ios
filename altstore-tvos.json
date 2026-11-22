@@ -23,13 +23,21 @@
       ],
       "versions": [
         {
+          "version": "0.7.11",
+          "date": "2026-11-22T18:15:09Z",
+          "localizedDescription": "Both apps\r\n- AetherEngine 7.73.0: Film that was converted for TV broadcast is restored to its original frame rate on the GPU, which is faster and uses less power.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.11/AIOStreams-tvOS.ipa",
+          "size": 13039996,
+          "minOSVersion": "18.0",
+          "sha256": "ff6245fd1bfe8b014eae1031034c73d2c8a0ee8edbed21b223ba7c8352a4e87f"
+        },
+        {
           "version": "0.7.10",
           "date": "2026-11-22T13:13:06Z",
           "localizedDescription": "Both apps\r\n- AetherEngine 7.72.1: VC-1 and WMV3 video (older Blu-ray and Windows Media files) decodes on several cores for smoother playback.",
           "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.10/AIOStreams-tvOS.ipa",
           "size": 13013225,
-          "minOSVersion": "18.0",
-          "sha256": "3097253893ee39750094a879f458a6dbd84d92d468551e20c13ddb32335253c1"
+          "minOSVersion": "18.0"
         },
         {
           "version": "0.7.9",
