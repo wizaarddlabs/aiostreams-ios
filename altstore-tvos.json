@@ -23,13 +23,21 @@
       ],
       "versions": [
         {
+          "version": "0.7.12",
+          "date": "2026-11-22T20:06:28Z",
+          "localizedDescription": "Apple TV\r\n- The player shows when the title ends (\"Ends at 10:42 PM\") under the clock.\r\n- New Subtitles → Delay setting: a subtitle offset every title starts with, from −10 to +10 seconds. You can still adjust it during playback in the Timing panel.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.12/AIOStreams-tvOS.ipa",
+          "size": 13049592,
+          "minOSVersion": "18.0",
+          "sha256": "c744f3c5bdc5c9ba23655a9d4e028469513a2589bb65867fdc6ad73ff9c308b2"
+        },
+        {
           "version": "0.7.11",
           "date": "2026-11-22T18:15:09Z",
           "localizedDescription": "Both apps\r\n- AetherEngine 7.73.0: Film that was converted for TV broadcast is restored to its original frame rate on the GPU, which is faster and uses less power.",
           "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.11/AIOStreams-tvOS.ipa",
           "size": 13039996,
-          "minOSVersion": "18.0",
-          "sha256": "ff6245fd1bfe8b014eae1031034c73d2c8a0ee8edbed21b223ba7c8352a4e87f"
+          "minOSVersion": "18.0"
         },
         {
           "version": "0.7.10",
