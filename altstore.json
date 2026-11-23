@@ -23,13 +23,21 @@
       ],
       "versions": [
         {
+          "version": "0.7.17",
+          "date": "2026-11-23T22:27:33Z",
+          "localizedDescription": "iPhone and iPad\r\n- Fixed catch-up programmes failing with \"source origin answers byte ranges with other bytes\".",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.17/AIOStreams.ipa",
+          "size": 18188259,
+          "minOSVersion": "18.0",
+          "sha256": "d2b8b9a67da0b7e0bc9e0031c7782116fd6fff417670cbad3cc045216dcc9fa2"
+        },
+        {
           "version": "0.7.16",
           "date": "2026-11-23T14:01:42Z",
           "localizedDescription": "iPhone and iPad\r\n- Tapping the middle of the player now reliably brings up the controls. Volume and brightness swipes only work along the outer edges: brightness on the left, volume on the right.",
           "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.16/AIOStreams.ipa",
           "size": 18187590,
-          "minOSVersion": "18.0",
-          "sha256": "bf91b416104fe6f69cd1cb1b7fc7b948344691a993687b8ec1a1d63607e936d0"
+          "minOSVersion": "18.0"
         },
         {
           "version": "0.7.15",
