@@ -23,13 +23,21 @@
       ],
       "versions": [
         {
+          "version": "0.7.14",
+          "date": "2026-11-23T11:34:54Z",
+          "localizedDescription": "iPhone and iPad\r\n- Fixed the app getting stuck on the loading spinner after signing out, even after restarting it, until it was reinstalled.\r\n- If the app ever stays stuck loading for about 20 seconds, it now offers Reset. Reset clears the app's saved data and sign-ins, as reinstalling would, but keeps your downloads.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.14/AIOStreams.ipa",
+          "size": 18187389,
+          "minOSVersion": "18.0",
+          "sha256": "9523c2fbbf43fed239d6b64de04311b103e07995326ac2961053d3f892c974d0"
+        },
+        {
           "version": "0.7.13",
           "date": "2026-11-22T23:51:59Z",
           "localizedDescription": "Apple TV\r\n- New Settings → Interface → Screen margins: shrinks the whole app towards the middle of the screen (1% to 6% on each side), for older TVs and projectors that cut off the edges.",
           "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.13/AIOStreams.ipa",
           "size": 18180524,
-          "minOSVersion": "18.0",
-          "sha256": "ff90dfb297dc6ed01125d446356b9cb5890a7d26df0c2826044c9b7e6da0c790"
+          "minOSVersion": "18.0"
         },
         {
           "version": "0.7.12",
