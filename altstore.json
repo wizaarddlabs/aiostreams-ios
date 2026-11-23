@@ -23,13 +23,21 @@
       ],
       "versions": [
         {
+          "version": "0.7.15",
+          "date": "2026-11-23T13:37:36Z",
+          "localizedDescription": "iPhone\r\n- The Live TV guide now works on iPhone, in portrait and landscape. Switch to Guide at the top of Live TV. Scrolling down gives the guide the whole screen, and tapping a past programme that supports catch-up plays it from the start.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.15/AIOStreams.ipa",
+          "size": 18187530,
+          "minOSVersion": "18.0",
+          "sha256": "6969547b886c44f89e083c50b0b28c175020a7bd6decab8ed6bbd9cf5b532ba3"
+        },
+        {
           "version": "0.7.14",
           "date": "2026-11-23T11:34:54Z",
           "localizedDescription": "iPhone and iPad\r\n- Fixed the app getting stuck on the loading spinner after signing out, even after restarting it, until it was reinstalled.\r\n- If the app ever stays stuck loading for about 20 seconds, it now offers Reset. Reset clears the app's saved data and sign-ins, as reinstalling would, but keeps your downloads.",
           "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.14/AIOStreams.ipa",
           "size": 18187389,
-          "minOSVersion": "18.0",
-          "sha256": "9523c2fbbf43fed239d6b64de04311b103e07995326ac2961053d3f892c974d0"
+          "minOSVersion": "18.0"
         },
         {
           "version": "0.7.13",
