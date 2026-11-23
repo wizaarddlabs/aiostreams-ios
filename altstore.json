@@ -23,13 +23,21 @@
       ],
       "versions": [
         {
+          "version": "0.7.16",
+          "date": "2026-11-23T14:01:42Z",
+          "localizedDescription": "iPhone and iPad\r\n- Tapping the middle of the player now reliably brings up the controls. Volume and brightness swipes only work along the outer edges: brightness on the left, volume on the right.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.16/AIOStreams.ipa",
+          "size": 18187590,
+          "minOSVersion": "18.0",
+          "sha256": "bf91b416104fe6f69cd1cb1b7fc7b948344691a993687b8ec1a1d63607e936d0"
+        },
+        {
           "version": "0.7.15",
           "date": "2026-11-23T13:37:36Z",
           "localizedDescription": "iPhone\r\n- The Live TV guide now works on iPhone, in portrait and landscape. Switch to Guide at the top of Live TV. Scrolling down gives the guide the whole screen, and tapping a past programme that supports catch-up plays it from the start.",
           "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.15/AIOStreams.ipa",
           "size": 18187530,
-          "minOSVersion": "18.0",
-          "sha256": "6969547b886c44f89e083c50b0b28c175020a7bd6decab8ed6bbd9cf5b532ba3"
+          "minOSVersion": "18.0"
         },
         {
           "version": "0.7.14",
