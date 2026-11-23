@@ -23,13 +23,21 @@
       ],
       "versions": [
         {
+          "version": "0.7.13",
+          "date": "2026-11-22T23:51:59Z",
+          "localizedDescription": "Apple TV\r\n- New Settings → Interface → Screen margins: shrinks the whole app towards the middle of the screen (1% to 6% on each side), for older TVs and projectors that cut off the edges.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.13/AIOStreams.ipa",
+          "size": 18180524,
+          "minOSVersion": "18.0",
+          "sha256": "ff90dfb297dc6ed01125d446356b9cb5890a7d26df0c2826044c9b7e6da0c790"
+        },
+        {
           "version": "0.7.12",
           "date": "2026-11-22T20:06:28Z",
           "localizedDescription": "Apple TV\r\n- The player shows when the title ends (\"Ends at 10:42 PM\") under the clock.\r\n- New Subtitles → Delay setting: a subtitle offset every title starts with, from −10 to +10 seconds. You can still adjust it during playback in the Timing panel.",
           "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.12/AIOStreams.ipa",
           "size": 18180524,
-          "minOSVersion": "18.0",
-          "sha256": "e97bb3037ff1fd690f21b4480296a8b0cdd587582595ff48c97d5732a25a94c6"
+          "minOSVersion": "18.0"
         },
         {
           "version": "0.7.11",
