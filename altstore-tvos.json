@@ -23,13 +23,21 @@
       ],
       "versions": [
         {
+          "version": "0.8.1",
+          "date": "2026-11-24T18:29:02Z",
+          "localizedDescription": "Both apps\r\n- The subtitle background now sits behind each line of text, as in the official AIOStreams apps, instead of one box around the whole subtitle.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.8.1/AIOStreams-tvOS.ipa",
+          "size": 13165789,
+          "minOSVersion": "18.0",
+          "sha256": "ff283180567cb064b835aca9d7c9803b6181dd54affdd0da45dd8d288a745467"
+        },
+        {
           "version": "0.8.0",
           "date": "2026-11-24T16:34:43Z",
           "localizedDescription": "Both apps\r\n- AetherEngine 7.74.0:\r\n  - Slow subtitles from the server no longer stall or fail playback.\r\n  - FLAC 7.1 audio plays on the correct speakers.\r\n  - Live channels that fall behind rebuffer instead of losing sound.\r\n  - Rewinding after resuming no longer downloads the title again.\r\n  - Anime typesetting no longer shows as rows of numbers.\r\n\r\niPhone and iPad\r\n- Catch-up programmes can now be rewound and fast-forwarded. A jump past what's already loaded restarts the stream from that minute.\r\n- Live TV on iPhone shows the channel that's playing at the top of the page, with a Close button.\r\n\r\nApple TV\r\n- One click on the remote now plays or pauses (it used to take up to three).",
           "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.8.0/AIOStreams-tvOS.ipa",
           "size": 13166019,
-          "minOSVersion": "18.0",
-          "sha256": "632a7d858418cc2776508694f1dd10d90802e83662704b20bae1cd8f476e184e"
+          "minOSVersion": "18.0"
         },
         {
           "version": "0.7.18",
