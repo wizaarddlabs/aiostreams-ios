@@ -23,13 +23,21 @@
       ],
       "versions": [
         {
+          "version": "0.8.2",
+          "date": "2026-11-24T20:34:17Z",
+          "localizedDescription": "Both apps\r\n- AetherEngine 7.75.0:\r\n  - Faster starts for anime MKV files with embedded subtitle fonts.\r\n  - Resume position is kept if the stream restarts while starting.\r\n  - A full device now shows an error instead of hanging at 0:00.\r\n  - Resuming a transcoded stream from the server is more reliable.\r\n  - Faster AV1 decoding.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.8.2/AIOStreams.ipa",
+          "size": 18327849,
+          "minOSVersion": "18.0",
+          "sha256": "4ee79f1356e4ed0d2b15c3a89358b76c972abdb96a77ef5016ba09f7715ead6d"
+        },
+        {
           "version": "0.8.1",
           "date": "2026-11-24T18:29:02Z",
           "localizedDescription": "Both apps\r\n- The subtitle background now sits behind each line of text, as in the official AIOStreams apps, instead of one box around the whole subtitle.",
           "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.8.1/AIOStreams.ipa",
           "size": 18294779,
-          "minOSVersion": "18.0",
-          "sha256": "c9a80d42f2052049c6a8c47fde4418da6668fb3111f02ee85e5683a6f38e3aad"
+          "minOSVersion": "18.0"
         },
         {
           "version": "0.8.0",
