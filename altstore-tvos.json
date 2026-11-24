@@ -23,13 +23,21 @@
       ],
       "versions": [
         {
+          "version": "0.7.18",
+          "date": "2026-11-24T00:01:50Z",
+          "localizedDescription": "Apple TV\r\n- The \"Who's watching?\" screen now wraps profiles into rows of five instead of running off the sides. With more than ten profiles, the list scrolls.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.18/AIOStreams-tvOS.ipa",
+          "size": 13059348,
+          "minOSVersion": "18.0",
+          "sha256": "3d0c60dcef2ef36f7a676469180256ed68d08c029d7442d54e3806f62cc2a9f5"
+        },
+        {
           "version": "0.7.17",
           "date": "2026-11-23T22:27:33Z",
           "localizedDescription": "iPhone and iPad\r\n- Fixed catch-up programmes failing with \"source origin answers byte ranges with other bytes\".",
           "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.7.17/AIOStreams-tvOS.ipa",
           "size": 13052610,
-          "minOSVersion": "18.0",
-          "sha256": "b3a0c165f8a9477f1222a7129757546d5362ad22bb7cce2104dd29f12e1523d4"
+          "minOSVersion": "18.0"
         },
         {
           "version": "0.7.16",
