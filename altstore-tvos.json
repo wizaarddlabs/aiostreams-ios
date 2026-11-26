@@ -23,13 +23,21 @@
       ],
       "versions": [
         {
+          "version": "0.8.3",
+          "date": "2026-11-26T02:02:04Z",
+          "localizedDescription": "Both apps\r\n- Seek bar previews now work across the whole timeline, not just the part already loaded.\r\n- Subtitle background bands now match each line's width (the first line of a two-line subtitle no longer stretches).\r\n- Subtitle outlines no longer show spikes on letters like M and N.\r\n- Dark styled subtitles (.ass) get a light outline so they stay readable.\r\n\r\nApple TV\r\n- The remote's OK button now plays or pauses on the first click.\r\n- Switch user keeps you signed in and switches profile without a password (only a PIN if the profile has one), so profiles signed in with Quick Connect can switch. Sign out is now its own button.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.8.3/AIOStreams-tvOS.ipa",
+          "size": 13208892,
+          "minOSVersion": "18.0",
+          "sha256": "8a5df233fe5ee1c4fc58e9fda2517d9de644cdc915a0e2c6c474c059a3f087d6"
+        },
+        {
           "version": "0.8.2",
           "date": "2026-11-24T20:34:17Z",
           "localizedDescription": "Both apps\r\n- AetherEngine 7.75.0:\r\n  - Faster starts for anime MKV files with embedded subtitle fonts.\r\n  - Resume position is kept if the stream restarts while starting.\r\n  - A full device now shows an error instead of hanging at 0:00.\r\n  - Resuming a transcoded stream from the server is more reliable.\r\n  - Faster AV1 decoding.",
           "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.8.2/AIOStreams-tvOS.ipa",
           "size": 13199004,
-          "minOSVersion": "18.0",
-          "sha256": "1d2f4073fe5c081f5052b757e8bd70412d5488b4c3badcdcbc43b055ec1fa014"
+          "minOSVersion": "18.0"
         },
         {
           "version": "0.8.1",
