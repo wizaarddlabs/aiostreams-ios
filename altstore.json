@@ -23,13 +23,21 @@
       ],
       "versions": [
         {
+          "version": "0.8.4",
+          "date": "2026-11-26T15:27:35Z",
+          "localizedDescription": "Both apps\r\n- AetherEngine 7.76.0:\r\n  - Faster starts on slow connections.\r\n  - Faster and more precise seeking.\r\n  - Some .ass subtitle tracks that showed nothing now display.\r\n  - Colour fixes for upscaled and deinterlaced video.\r\n- New Binaural for headphones option (Apple TV: Settings → Audio; iPhone/iPad: Settings → Sound): surround and Atmos sound around you on any headphones.\r\n\r\niPhone and iPad\r\n- Dialogue boost, Night mode and the audio channel limit in Settings → Sound now work. They were shown but not applied before.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.8.4/AIOStreams.ipa",
+          "size": 18366120,
+          "minOSVersion": "18.0",
+          "sha256": "4cde6a9fb162ceb2c5266ede2357a10fabc77c38c64b3ba0a81c2cd6f95e5f23"
+        },
+        {
           "version": "0.8.3",
           "date": "2026-11-26T02:02:04Z",
           "localizedDescription": "Both apps\r\n- Seek bar previews now work across the whole timeline, not just the part already loaded.\r\n- Subtitle background bands now match each line's width (the first line of a two-line subtitle no longer stretches).\r\n- Subtitle outlines no longer show spikes on letters like M and N.\r\n- Dark styled subtitles (.ass) get a light outline so they stay readable.\r\n\r\nApple TV\r\n- The remote's OK button now plays or pauses on the first click.\r\n- Switch user keeps you signed in and switches profile without a password (only a PIN if the profile has one), so profiles signed in with Quick Connect can switch. Sign out is now its own button.",
           "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.8.3/AIOStreams.ipa",
           "size": 18332446,
-          "minOSVersion": "18.0",
-          "sha256": "27d4605af25d6ad89b5ec3440dc4da2ec20ef596b132412aee386871ed947739"
+          "minOSVersion": "18.0"
         },
         {
           "version": "0.8.2",
