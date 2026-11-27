@@ -23,13 +23,21 @@
       ],
       "versions": [
         {
+          "version": "0.8.6",
+          "date": "2026-11-27T20:15:32Z",
+          "localizedDescription": "iPhone and iPad\r\n- The Binaural for headphones switch, and \"iOS app\" in About, now show their text instead of a code.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.8.6/AIOStreams-tvOS.ipa",
+          "size": 14072704,
+          "minOSVersion": "18.0",
+          "sha256": "e6b42d1d81ce0bb73a01631cdf287fe30a1a63085cad377dca4a98df776dfc70"
+        },
+        {
           "version": "0.8.5",
           "date": "2026-11-27T15:57:42Z",
           "localizedDescription": "Both apps\r\n- .ass and .ssa subtitles now show as their authors styled them, using libass as the official apps do: positions, fonts (including those embedded in the file), sizes, colours, borders and karaoke. Turn on \"Override styled\" to keep your own subtitle style instead.",
           "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.8.5/AIOStreams-tvOS.ipa",
           "size": 14072705,
-          "minOSVersion": "18.0",
-          "sha256": "e58146d299370c25b4779ecce9263199d817ff293543eaf83c99a6ea13055e80"
+          "minOSVersion": "18.0"
         },
         {
           "version": "0.8.4",
