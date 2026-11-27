@@ -23,13 +23,21 @@
       ],
       "versions": [
         {
+          "version": "0.8.5",
+          "date": "2026-11-27T15:57:42Z",
+          "localizedDescription": "Both apps\r\n- .ass and .ssa subtitles now show as their authors styled them, using libass as the official apps do: positions, fonts (including those embedded in the file), sizes, colours, borders and karaoke. Turn on \"Override styled\" to keep your own subtitle style instead.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.8.5/AIOStreams.ipa",
+          "size": 19182851,
+          "minOSVersion": "18.0",
+          "sha256": "d79c31374038173e1544845a20c2243b07b7b453c9d4c3241b49abbfa82866ca"
+        },
+        {
           "version": "0.8.4",
           "date": "2026-11-26T15:27:35Z",
           "localizedDescription": "Both apps\r\n- AetherEngine 7.76.0:\r\n  - Faster starts on slow connections.\r\n  - Faster and more precise seeking.\r\n  - Some .ass subtitle tracks that showed nothing now display.\r\n  - Colour fixes for upscaled and deinterlaced video.\r\n- New Binaural for headphones option (Apple TV: Settings → Audio; iPhone/iPad: Settings → Sound): surround and Atmos sound around you on any headphones.\r\n\r\niPhone and iPad\r\n- Dialogue boost, Night mode and the audio channel limit in Settings → Sound now work. They were shown but not applied before.",
           "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.8.4/AIOStreams.ipa",
           "size": 18366120,
-          "minOSVersion": "18.0",
-          "sha256": "4cde6a9fb162ceb2c5266ede2357a10fabc77c38c64b3ba0a81c2cd6f95e5f23"
+          "minOSVersion": "18.0"
         },
         {
           "version": "0.8.3",
