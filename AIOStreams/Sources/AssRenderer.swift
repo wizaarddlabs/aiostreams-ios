@@ -24,6 +24,7 @@ final class AssRenderer {
     private var fontNames = Set<String>()
     private var frameSize: (Int32, Int32) = (0, 0)
     private var storageSize: (Int32, Int32) = (0, 0)
+    private var layout: (scale: Double, position: Double) = (1, 0)
     private var last: Frame?
 
     init?() {
@@ -52,6 +53,19 @@ final class AssRenderer {
     /// script names that neither has falls back to a sans serif.
     private static func setFonts(_ renderer: OpaquePointer) {
         ass_set_fonts(renderer, nil, "Helvetica Neue", Int32(ASS_FONTPROVIDER_AUTODETECT.rawValue), nil, 1)
+    }
+
+    /// The page's Size and Position, as the official apps apply them to ASS (mpv's
+    /// `sub-ass-override=scale`): text scaled by `scale`, and lines the script doesn't place moved
+    /// to `position`, 0 at the bottom of the picture to 100 at the top. Placed signs stay put.
+    func setLayout(scale: Double, position: Double) {
+        queue.async { [self] in
+            guard scale != layout.scale || position != layout.position else { return }
+            layout = (scale, position)
+            ass_set_font_scale(renderer, scale)
+            ass_set_line_position(renderer, min(max(position, 0), 100))
+            last = nil
+        }
     }
 
     /// A new track from the script's header, with no events yet.
@@ -134,6 +148,7 @@ final class AssRenderer {
         var changed: Int32 = 0
         let images = ass_render_frame(renderer, track, Int64((seconds * 1000).rounded()), &changed)
         if changed == 0, last != nil || images == nil { return last }
+        // A layout change re-renders without libass saying so; `last` was dropped for it.
         last = images.flatMap(Self.blend)
         return last
     }

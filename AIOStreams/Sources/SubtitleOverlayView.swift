@@ -56,6 +56,10 @@ final class SubtitleOverlayView: UIView {
         didSet {
             guard look != oldValue else { return }
             if look.forceStyle != oldValue.forceStyle, let engine = assEngine { chooseASS(engine) }
+            if look.scale != oldValue.scale || look.position != oldValue.position {
+                applyASSLayout()
+                renderASS()
+            }
             setNeedsDisplay()
         }
     }
@@ -154,6 +158,7 @@ final class SubtitleOverlayView: UIView {
             if ass == nil {
                 ass = AssRenderer()
                 ass?.add(fonts: assFonts)
+                applyASSLayout()
             }
             ass?.load(header: header)
             ass?.feed(cues)
@@ -162,6 +167,12 @@ final class SubtitleOverlayView: UIView {
         }
         refresh(force: true)
         renderASS()
+    }
+
+    /// The page's Size and Position on libass: its position is where the bottom line sits, as a
+    /// percent of the height from the top, and libass's runs from the bottom.
+    private func applyASSLayout() {
+        ass?.setLayout(scale: look.scale, position: 100 - look.position)
     }
 
     /// One frame at a time from libass, always for the latest time.

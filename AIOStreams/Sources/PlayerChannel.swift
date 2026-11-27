@@ -780,6 +780,8 @@ final class PlayerChannel {
             "State: \(engine.state)",
             "Route: \(engine.videoRoute.rawValue)",
             "Audio: \(engine.audioDelivery.rawValue) \(engine.activeAudioDecoder ?? "")",
+            // Whether Dialogue boost, Night mode, the channel cap and binaural reach the sound.
+            "Audio shaping: \(shaping.summary) (\(engine.audioShapingState))",
             "Video: \(engine.sourceVideoCodecName ?? "?") \(engine.sourceVideoWidth)x\(engine.sourceVideoHeight) \(engine.videoFormat)",
             "Decoder: \(engine.activeVideoDecoder ?? "?")",
         ].joined(separator: "\n")
