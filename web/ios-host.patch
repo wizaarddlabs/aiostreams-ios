@@ -661,3 +661,303 @@ index 3f11e177..f8ae4576 100644
      /** Positive plays the sound later than the picture. */
      delayMs: device<number>(
        'aiostreams-web-audio-delay',
+diff --git a/packages/web/src/locales/ar.po b/packages/web/src/locales/ar.po
+index aa485cca..a43fee45 100644
+--- a/packages/web/src/locales/ar.po
++++ b/packages/web/src/locales/ar.po
+@@ -5830,3 +5830,15 @@ msgstr "تقييمك"
+ #: src/app/settings/cache.tsx
+ msgid "Your watch history and totals."
+ msgstr "سجل مشاهدتك وإجمالياتها."
++
++#: src/app/settings/audio.tsx
++msgid "Binaural for headphones"
++msgstr "صوت ثنائي الأذن للسماعات"
++
++#: src/app/settings/audio.tsx
++msgid "Places 5.1, 7.1 and Atmos around you on any headphones instead of folding them to stereo. For headphones only, not speakers."
++msgstr "يضع صوت 5.1 و7.1 وAtmos من حولك على أي سماعات بدلًا من دمجه إلى ستيريو. للسماعات فقط، وليس لمكبرات الصوت."
++
++#: src/app/settings/about.tsx
++msgid "iOS app"
++msgstr "تطبيق iOS"
+diff --git a/packages/web/src/locales/de.po b/packages/web/src/locales/de.po
+index 8d657c48..40a058ae 100644
+--- a/packages/web/src/locales/de.po
++++ b/packages/web/src/locales/de.po
+@@ -5813,3 +5813,15 @@ msgstr "Deine Bewertung"
+ #: src/app/settings/cache.tsx
+ msgid "Your watch history and totals."
+ msgstr "Dein Wiedergabeverlauf und deine Gesamtstatistiken."
++
++#: src/app/settings/audio.tsx
++msgid "Binaural for headphones"
++msgstr "Binaural für Kopfhörer"
++
++#: src/app/settings/audio.tsx
++msgid "Places 5.1, 7.1 and Atmos around you on any headphones instead of folding them to stereo. For headphones only, not speakers."
++msgstr "Verteilt 5.1, 7.1 und Atmos auf beliebigen Kopfhörern rund um dich, statt sie zu Stereo zusammenzufassen. Nur für Kopfhörer, nicht für Lautsprecher."
++
++#: src/app/settings/about.tsx
++msgid "iOS app"
++msgstr "iOS-App"
+diff --git a/packages/web/src/locales/el.po b/packages/web/src/locales/el.po
+index af4a7e46..1516a11a 100644
+--- a/packages/web/src/locales/el.po
++++ b/packages/web/src/locales/el.po
+@@ -5813,3 +5813,15 @@ msgstr "Η βαθμολογία σου"
+ #: src/app/settings/cache.tsx
+ msgid "Your watch history and totals."
+ msgstr "Το ιστορικό παρακολούθησης και τα συνολικά στατιστικά σου."
++
++#: src/app/settings/audio.tsx
++msgid "Binaural for headphones"
++msgstr "Binaural για ακουστικά"
++
++#: src/app/settings/audio.tsx
++msgid "Places 5.1, 7.1 and Atmos around you on any headphones instead of folding them to stereo. For headphones only, not speakers."
++msgstr "Τοποθετεί τον ήχο 5.1, 7.1 και Atmos γύρω σας σε οποιαδήποτε ακουστικά αντί να τον συμπτύσσει σε στερεοφωνικό. Μόνο για ακουστικά, όχι για ηχεία."
++
++#: src/app/settings/about.tsx
++msgid "iOS app"
++msgstr "Εφαρμογή iOS"
+diff --git a/packages/web/src/locales/en-GB.po b/packages/web/src/locales/en-GB.po
+index 00187b42..2b30886a 100644
+--- a/packages/web/src/locales/en-GB.po
++++ b/packages/web/src/locales/en-GB.po
+@@ -6022,3 +6022,15 @@ msgstr "Your rating"
+ #: src/app/settings/cache.tsx
+ msgid "Your watch history and totals."
+ msgstr "Your watch history and totals."
++
++#: src/app/settings/audio.tsx
++msgid "Binaural for headphones"
++msgstr "Binaural for headphones"
++
++#: src/app/settings/audio.tsx
++msgid "Places 5.1, 7.1 and Atmos around you on any headphones instead of folding them to stereo. For headphones only, not speakers."
++msgstr "Places 5.1, 7.1 and Atmos around you on any headphones instead of folding them to stereo. For headphones only, not speakers."
++
++#: src/app/settings/about.tsx
++msgid "iOS app"
++msgstr "iOS app"
+diff --git a/packages/web/src/locales/es.po b/packages/web/src/locales/es.po
+index 15450636..2e9d76db 100644
+--- a/packages/web/src/locales/es.po
++++ b/packages/web/src/locales/es.po
+@@ -5834,3 +5834,15 @@ msgstr "Tu califiación"
+ #: src/app/settings/cache.tsx
+ msgid "Your watch history and totals."
+ msgstr "Tu historial de visualizaciones y totales."
++
++#: src/app/settings/audio.tsx
++msgid "Binaural for headphones"
++msgstr "Binaural para auriculares"
++
++#: src/app/settings/audio.tsx
++msgid "Places 5.1, 7.1 and Atmos around you on any headphones instead of folding them to stereo. For headphones only, not speakers."
++msgstr "Coloca el sonido 5.1, 7.1 y Atmos a tu alrededor en cualquier auricular en lugar de reducirlo a estéreo. Solo para auriculares, no para altavoces."
++
++#: src/app/settings/about.tsx
++msgid "iOS app"
++msgstr "iOS app"
+diff --git a/packages/web/src/locales/fr.po b/packages/web/src/locales/fr.po
+index a24a27d1..f1363088 100644
+--- a/packages/web/src/locales/fr.po
++++ b/packages/web/src/locales/fr.po
+@@ -5887,3 +5887,15 @@ msgstr "Votre note"
+ #: src/app/settings/cache.tsx
+ msgid "Your watch history and totals."
+ msgstr "Votre historique de visionnage et totaux."
++
++#: src/app/settings/audio.tsx
++msgid "Binaural for headphones"
++msgstr "Binaural pour casque"
++
++#: src/app/settings/audio.tsx
++msgid "Places 5.1, 7.1 and Atmos around you on any headphones instead of folding them to stereo. For headphones only, not speakers."
++msgstr "Place le son 5.1, 7.1 et Atmos autour de vous sur n’importe quel casque au lieu de le réduire en stéréo. Pour casque uniquement, pas pour enceintes."
++
++#: src/app/settings/about.tsx
++msgid "iOS app"
++msgstr "Application iOS"
+diff --git a/packages/web/src/locales/id.po b/packages/web/src/locales/id.po
+index 2b856215..fc9faebe 100644
+--- a/packages/web/src/locales/id.po
++++ b/packages/web/src/locales/id.po
+@@ -5854,3 +5854,15 @@ msgstr "Penilaian Anda"
+ #: src/app/settings/cache.tsx
+ msgid "Your watch history and totals."
+ msgstr "Riwayat tontonan dan total aktivitas menonton Anda."
++
++#: src/app/settings/audio.tsx
++msgid "Binaural for headphones"
++msgstr "Binaural untuk headphone"
++
++#: src/app/settings/audio.tsx
++msgid "Places 5.1, 7.1 and Atmos around you on any headphones instead of folding them to stereo. For headphones only, not speakers."
++msgstr "Menempatkan suara 5.1, 7.1 dan Atmos di sekitar Anda di headphone apa pun alih-alih melipatnya ke stereo. Hanya untuk headphone, bukan speaker."
++
++#: src/app/settings/about.tsx
++msgid "iOS app"
++msgstr "Aplikasi iOS"
+diff --git a/packages/web/src/locales/it.po b/packages/web/src/locales/it.po
+index 32794408..e0b62205 100644
+--- a/packages/web/src/locales/it.po
++++ b/packages/web/src/locales/it.po
+@@ -5803,3 +5803,15 @@ msgstr "La tua valutazione"
+ #: src/app/settings/cache.tsx
+ msgid "Your watch history and totals."
+ msgstr "Cronologia di visione e totali."
++
++#: src/app/settings/audio.tsx
++msgid "Binaural for headphones"
++msgstr "Binaurale per cuffie"
++
++#: src/app/settings/audio.tsx
++msgid "Places 5.1, 7.1 and Atmos around you on any headphones instead of folding them to stereo. For headphones only, not speakers."
++msgstr "Colloca l’audio 5.1, 7.1 e Atmos intorno a te su qualsiasi cuffia invece di ridurlo a stereo. Solo per cuffie, non per altoparlanti."
++
++#: src/app/settings/about.tsx
++msgid "iOS app"
++msgstr "App iOS"
+diff --git a/packages/web/src/locales/ms.po b/packages/web/src/locales/ms.po
+index 18a1f22e..d87a2991 100644
+--- a/packages/web/src/locales/ms.po
++++ b/packages/web/src/locales/ms.po
+@@ -5803,3 +5803,15 @@ msgstr "Penilaian anda"
+ #: src/app/settings/cache.tsx
+ msgid "Your watch history and totals."
+ msgstr "Sejarah tontonan dan jumlah anda."
++
++#: src/app/settings/audio.tsx
++msgid "Binaural for headphones"
++msgstr "Binaural untuk fon kepala"
++
++#: src/app/settings/audio.tsx
++msgid "Places 5.1, 7.1 and Atmos around you on any headphones instead of folding them to stereo. For headphones only, not speakers."
++msgstr "Meletakkan bunyi 5.1, 7.1 dan Atmos di sekeliling anda pada mana-mana fon kepala dan bukannya menggabungkannya kepada stereo. Untuk fon kepala sahaja, bukan pembesar suara."
++
++#: src/app/settings/about.tsx
++msgid "iOS app"
++msgstr "Aplikasi iOS"
+diff --git a/packages/web/src/locales/pl.po b/packages/web/src/locales/pl.po
+index beb3a6a1..05dc1361 100644
+--- a/packages/web/src/locales/pl.po
++++ b/packages/web/src/locales/pl.po
+@@ -5830,3 +5830,15 @@ msgstr "Twoja ocena"
+ #: src/app/settings/cache.tsx
+ msgid "Your watch history and totals."
+ msgstr "Twoja historia oglądania i podsumowania."
++
++#: src/app/settings/audio.tsx
++msgid "Binaural for headphones"
++msgstr "Dźwięk binauralny na słuchawki"
++
++#: src/app/settings/audio.tsx
++msgid "Places 5.1, 7.1 and Atmos around you on any headphones instead of folding them to stereo. For headphones only, not speakers."
++msgstr "Rozmieszcza dźwięk 5.1, 7.1 i Atmos wokół ciebie na dowolnych słuchawkach zamiast łączyć go do stereo. Tylko dla słuchawek, nie głośników."
++
++#: src/app/settings/about.tsx
++msgid "iOS app"
++msgstr "Aplikacja iOS"
+diff --git a/packages/web/src/locales/pt-BR.po b/packages/web/src/locales/pt-BR.po
+index f367d724..bb42e762 100644
+--- a/packages/web/src/locales/pt-BR.po
++++ b/packages/web/src/locales/pt-BR.po
+@@ -5803,3 +5803,15 @@ msgstr "Sua avaliação"
+ #: src/app/settings/cache.tsx
+ msgid "Your watch history and totals."
+ msgstr "Seu histórico de exibição e totais."
++
++#: src/app/settings/audio.tsx
++msgid "Binaural for headphones"
++msgstr "Binaural para fones de ouvido"
++
++#: src/app/settings/audio.tsx
++msgid "Places 5.1, 7.1 and Atmos around you on any headphones instead of folding them to stereo. For headphones only, not speakers."
++msgstr "Coloca o som 5.1, 7.1 e Atmos ao seu redor em qualquer fone de ouvido em vez de reduzi-lo a estéreo. Apenas para fones, não para alto-falantes."
++
++#: src/app/settings/about.tsx
++msgid "iOS app"
++msgstr "App iOS"
+diff --git a/packages/web/src/locales/pt.po b/packages/web/src/locales/pt.po
+index 71827ddb..54e65e57 100644
+--- a/packages/web/src/locales/pt.po
++++ b/packages/web/src/locales/pt.po
+@@ -5885,3 +5885,15 @@ msgstr "A sua classificação"
+ #: src/app/settings/cache.tsx
+ msgid "Your watch history and totals."
+ msgstr "O seu histórico e totais."
++
++#: src/app/settings/audio.tsx
++msgid "Binaural for headphones"
++msgstr "Binaural para auscultadores"
++
++#: src/app/settings/audio.tsx
++msgid "Places 5.1, 7.1 and Atmos around you on any headphones instead of folding them to stereo. For headphones only, not speakers."
++msgstr "Coloca o som 5.1, 7.1 e Atmos à sua volta em quaisquer auscultadores em vez de o reduzir a estéreo. Apenas para auscultadores, não para colunas."
++
++#: src/app/settings/about.tsx
++msgid "iOS app"
++msgstr "App iOS"
+diff --git a/packages/web/src/locales/ro.po b/packages/web/src/locales/ro.po
+index 83aad5d7..d9f05a0f 100644
+--- a/packages/web/src/locales/ro.po
++++ b/packages/web/src/locales/ro.po
+@@ -5830,3 +5830,15 @@ msgstr "Evaluarea ta"
+ #: src/app/settings/cache.tsx
+ msgid "Your watch history and totals."
+ msgstr "Istoricul tău de vizionare și totalurile."
++
++#: src/app/settings/audio.tsx
++msgid "Binaural for headphones"
++msgstr "Binaural pentru căști"
++
++#: src/app/settings/audio.tsx
++msgid "Places 5.1, 7.1 and Atmos around you on any headphones instead of folding them to stereo. For headphones only, not speakers."
++msgstr "Așază sunetul 5.1, 7.1 și Atmos în jurul tău pe orice căști, în loc să-l reducă la stereo. Doar pentru căști, nu pentru boxe."
++
++#: src/app/settings/about.tsx
++msgid "iOS app"
++msgstr "Aplicația iOS"
+diff --git a/packages/web/src/locales/tr.po b/packages/web/src/locales/tr.po
+index 18081532..5fd508f1 100644
+--- a/packages/web/src/locales/tr.po
++++ b/packages/web/src/locales/tr.po
+@@ -5883,3 +5883,15 @@ msgstr "Puanın"
+ #: src/app/settings/cache.tsx
+ msgid "Your watch history and totals."
+ msgstr "İzleme geçmişin ve toplamların."
++
++#: src/app/settings/audio.tsx
++msgid "Binaural for headphones"
++msgstr "Kulaklık için binaural"
++
++#: src/app/settings/audio.tsx
++msgid "Places 5.1, 7.1 and Atmos around you on any headphones instead of folding them to stereo. For headphones only, not speakers."
++msgstr "5.1, 7.1 ve Atmos sesi stereoya indirmek yerine herhangi bir kulaklıkta etrafınıza yerleştirir. Yalnızca kulaklık içindir, hoparlör için değil."
++
++#: src/app/settings/about.tsx
++msgid "iOS app"
++msgstr "iOS uygulaması"
+diff --git a/packages/web/src/locales/zh-Hans.po b/packages/web/src/locales/zh-Hans.po
+index e3a2e798..bc1fd674 100644
+--- a/packages/web/src/locales/zh-Hans.po
++++ b/packages/web/src/locales/zh-Hans.po
+@@ -5892,3 +5892,15 @@ msgstr "你的评分"
+ #: src/app/settings/cache.tsx
+ msgid "Your watch history and totals."
+ msgstr "你的观看历史和统计数据。"
++
++#: src/app/settings/audio.tsx
++msgid "Binaural for headphones"
++msgstr "耳机双耳音效"
++
++#: src/app/settings/audio.tsx
++msgid "Places 5.1, 7.1 and Atmos around you on any headphones instead of folding them to stereo. For headphones only, not speakers."
++msgstr "在任何耳机上将 5.1、7.1 和全景声环绕在你周围，而不是缩混为立体声。仅适用于耳机，不适用于扬声器。"
++
++#: src/app/settings/about.tsx
++msgid "iOS app"
++msgstr "iOS 应用"
