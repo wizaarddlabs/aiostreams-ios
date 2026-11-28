@@ -23,13 +23,21 @@
       ],
       "versions": [
         {
+          "version": "0.8.7",
+          "date": "2026-11-28T04:33:27Z",
+          "localizedDescription": "Both apps\r\n- .ass/.ssa subtitles now follow your subtitle Size and Position settings, like the official apps. Regular dialogue moves and scales, while signs the file places itself stay put.\r\n\r\nApple TV\r\n- Channels without guide data can now be selected and played from the guide.\r\n\r\niPhone and iPad\r\n- Diagnostics reports now show whether Dialogue boost, Night mode, the channel limit and Binaural were applied to the current stream.",
+          "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.8.7/AIOStreams-tvOS.ipa",
+          "size": 14082582,
+          "minOSVersion": "18.0",
+          "sha256": "e37484e972b56cae782216a48244f1a8e3b8acacbd18a42eaa0eeb45ec81b415"
+        },
+        {
           "version": "0.8.6",
           "date": "2026-11-27T20:15:32Z",
           "localizedDescription": "iPhone and iPad\r\n- The Binaural for headphones switch, and \"iOS app\" in About, now show their text instead of a code.",
           "downloadURL": "https://github.com/wizaarddlabs/aiostreams-ios/releases/download/v0.8.6/AIOStreams-tvOS.ipa",
           "size": 14072704,
-          "minOSVersion": "18.0",
-          "sha256": "e6b42d1d81ce0bb73a01631cdf287fe30a1a63085cad377dca4a98df776dfc70"
+          "minOSVersion": "18.0"
         },
         {
           "version": "0.8.5",
