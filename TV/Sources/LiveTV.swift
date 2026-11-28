@@ -452,6 +452,7 @@ private final class GuideFocus: ObservableObject {
 private final class GuideScroll: ObservableObject {
     @Published var offset: CGPoint = .zero
     @Published var height: CGFloat = 0
+    @Published var width: CGFloat = 0
 }
 
 /// Channels down the side and the coming hours across, each programme as wide as it lasts. The
@@ -536,6 +537,7 @@ private struct GuideView: View {
                 } action: { _, visible in
                     scrolled.offset = visible.origin
                     scrolled.height = visible.height
+                    scrolled.width = visible.width
                 }
                 // Opens half an hour before now, with the earlier programmes a channel keeps to the left;
                 // again once the window is known, as the guide loads after the grid first draws.
@@ -673,17 +675,37 @@ private struct GuideChannel: View {
     }
 }
 
-/// "No guide for this channel", kept beside the channels wherever the guide is scrolled to.
-private struct GuideEmptyLabel: View {
+/// "No guide for this channel": one cell as wide as the guide shows, kept beside the channels
+/// wherever the guide is scrolled to, which plays the channel, as the web app's guide does. Without
+/// it a channel with no programmes has nothing to land on, and moving down skips its row. Laid
+/// out at the scrolled place rather than offset there, so landing on it doesn't scroll the guide.
+private struct GuideEmptyCell: View {
     @ObservedObject var scrolled: GuideScroll
+    let layout: GuideLayout
+    let focus: GuideFocus
+    let action: () -> Void
 
     var body: some View {
-        Text(L("No guide for this channel"))
-            .font(Theme.font(Theme.sm))
-            .foregroundStyle(Theme.gray500)
-            .padding(.horizontal, Theme.px(12))
-            .frame(height: GuideView.rowHeight)
-            .offset(x: max(0, scrolled.offset.x))
+        let start = min(max(0, scrolled.offset.x), max(layout.width - Theme.px(200), 0))
+        let width = min(max(scrolled.width, Theme.px(200)), layout.width - start)
+        HStack(spacing: 0) {
+            Color.clear.frame(width: start, height: GuideView.rowHeight)
+            Button(action: action) {
+                Focused { isFocused in
+                    Text(L("No guide for this channel"))
+                        .font(Theme.font(Theme.sm))
+                        .foregroundStyle(Theme.gray400)
+                        .padding(.horizontal, Theme.px(12))
+                        .frame(width: max(width - GuideView.gap, Theme.px(4)), height: GuideView.rowHeight, alignment: .leading)
+                        .background(
+                            RoundedRectangle(cornerRadius: Theme.px(8), style: .continuous).fill(Color.white.opacity(0.05))
+                        )
+                        // Nothing to describe above the grid.
+                        .onChange(of: isFocused) { _, on in if on { focus.programme = nil } }
+                }
+            }
+            .buttonStyle(RowStyle(radius: Theme.px(8)))
+        }
     }
 }
 
@@ -730,7 +752,7 @@ private struct GuideRow: View {
                 .fill(.white.opacity(0.02))
                 .frame(width: layout.width, height: GuideView.rowHeight)
             if segments.isEmpty {
-                GuideEmptyLabel(scrolled: scrolled)
+                GuideEmptyCell(scrolled: scrolled, layout: layout, focus: focus) { play(channel) }
             }
             HStack(spacing: 0) {
                 ForEach(segments, id: \.id) { segment in
